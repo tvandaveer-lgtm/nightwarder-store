@@ -103,6 +103,7 @@ a { color: inherit; }
 }
 
 .nav-menu {
+  display: none;
   margin: 0;
 }
 
@@ -153,12 +154,6 @@ a { color: inherit; }
   gap: 1.1rem;
   color: var(--muted);
   font-size: 0.9rem;
-}
-
-/* Beat the UA details:not([open]) hide so desktop nav stays visible. */
-.nav-menu:not([open]) > .nav,
-.nav-menu[open] > .nav {
-  display: flex;
 }
 
 .nav a {
@@ -583,25 +578,23 @@ a.buy:focus-visible,
 
 @media (max-width: 640px) {
   .site-header .inner {
+    position: relative;
     min-height: 3.75rem;
     padding: 0.35rem 0;
     gap: 0.75rem;
+  }
+
+  .nav-menu {
+    display: block;
+    position: relative;
   }
 
   .nav-toggle {
     display: inline-flex;
   }
 
-  .nav-menu {
-    position: relative;
-  }
-
-  .nav-menu:not([open]) > .nav {
+  .nav {
     display: none;
-  }
-
-  .nav-menu[open] > .nav {
-    display: flex;
     position: absolute;
     top: calc(100% + 0.45rem);
     right: 0;
@@ -615,6 +608,10 @@ a.buy:focus-visible,
     border-radius: 12px;
     background: rgba(16, 21, 27, 0.97);
     box-shadow: var(--shadow);
+  }
+
+  .nav-menu[open] + .nav {
+    display: flex;
   }
 
   .nav a {
