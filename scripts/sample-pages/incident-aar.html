@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+  :root { --navy:#1b365d; --gold:#f3e2a6; --label:#d7e0ea; --ink:#1a2330; --muted:#5c6774; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:#fff; color:var(--ink);
+    font-family: "Liberation Serif", "Times New Roman", Georgia, serif; }
+  body { width:1200px; min-height:1550px; padding:22px 28px 28px; }
+  .meta { font-family:"IBM Plex Sans", Arial, sans-serif; font-size:12px; color:#8a93a0; }
+  .badge { position:absolute; top:18px; right:28px; background:#16304f; color:#fff;
+    border-radius:10px; padding:8px 14px; font-size:13px; font-weight:700;
+    font-family:"IBM Plex Sans", Arial, sans-serif; }
+  .badge em { color:#f0c14b; font-style:normal; }
+  .wrap { position:relative; }
+  h1 { margin:10px 0 4px; font-size:30px; color:var(--navy); }
+  .bar { background:var(--navy); color:#fff; font-size:20px; font-weight:700;
+    padding:10px 14px; margin:8px 0 8px; letter-spacing:.02em; }
+  .sub { font-style:italic; color:var(--muted); font-size:15px; margin:0 0 12px; }
+  table { border-collapse:collapse; width:100%; font-size:15px; margin:0 0 12px;
+    font-family:"IBM Plex Sans", Arial, sans-serif; }
+  th { background:var(--navy); color:#fff; font-weight:650; text-align:left;
+    padding:7px 8px; }
+  td { border:1px solid #b7c0cb; padding:7px 8px; }
+  td.l { background:var(--label); font-weight:600; width:24%; }
+  td.g { background:var(--gold); min-height:28px; }
+  .checks { display:grid; grid-template-columns:repeat(4,1fr); gap:8px;
+    background:var(--gold); padding:12px; border:1px solid #d4c48a;
+    font-family:"IBM Plex Sans", Arial, sans-serif; font-size:15px; }
+  .checks span { display:flex; align-items:center; gap:8px; }
+  .box { width:16px; height:16px; border:1.5px solid #1b365d; background:#fff; }
+  .foot { font-size:12px; color:#8a93a0; font-style:italic; margin-top:10px; }
+</style></head>
+<body><div class="wrap">
+<p class="meta">NightWarder | SKU-NW-AAR-01 | Blank template | Version 2026-09-03c</p>
+<div class="badge">EXAMPLE · <em>Station 99</em></div>
+<h1>4. Incident header</h1>
+<p class="sub">Copy times from CAD or the radio log. Check every type that applies. Gold is input. Do not invent.</p>
+<table>
+  <tr><td class="l">Department / AHJ</td><td class="g"></td><td class="l">Incident name</td><td class="g"></td></tr>
+  <tr><td class="l">Incident # (CAD)</td><td class="g"></td><td class="l">Run report / NFIRS #</td><td class="g"></td></tr>
+  <tr><td class="l">Date</td><td class="g"></td><td class="l">Address / location</td><td class="g"></td></tr>
+  <tr><td class="l">Alarm time</td><td class="g"></td><td class="l">First unit on scene</td><td class="g"></td></tr>
+  <tr><td class="l">Control time</td><td class="g"></td><td class="l">Available / last unit clear</td><td class="g"></td></tr>
+  <tr><td class="l">Incident commander</td><td class="g"></td><td class="l">Safety officer / ISO</td><td class="g"></td></tr>
+  <tr><td class="l">First-due unit</td><td class="g"></td><td class="l">Shift / tour</td><td class="g"></td></tr>
+  <tr><td class="l">Alarm level / assignment</td><td class="g"></td><td class="l">Total personnel on scene</td><td class="g"></td></tr>
+  <tr><td class="l">Weather observed</td><td class="g"></td><td class="l">Heat index or WBGT</td><td class="g"></td></tr>
+  <tr><td class="l">Mutual aid</td><td class="g"></td><td class="l">Who wrote this packet</td><td class="g"></td></tr>
+</table>
+<p class="sub" style="margin-top:8px">Incident type — check all that apply</p>
+<div class="checks">
+  <span><i class="box"></i> Fire</span><span><i class="box"></i> MVC</span>
+  <span><i class="box"></i> Medical</span><span><i class="box"></i> Hazmat</span>
+  <span><i class="box"></i> Weather</span><span><i class="box"></i> Other</span>
+  <span><i class="box"></i> Rescue / extrication</span><span><i class="box"></i> Wildland</span>
+  <span><i class="box"></i> Water / ice</span><span><i class="box"></i> Alarm / good intent</span>
+  <span><i class="box"></i> Standby / cover</span><span><i class="box"></i> Training</span>
+</div>
+<p class="sub" style="margin-top:14px">Brief nature / occupancy / what was dispatched</p>
+<table><tr><td class="g" style="height:42px"></td></tr></table>
+<p class="foot">Brief nature is a phrase you would say on the radio, not a finished narrative.</p>
+</div></body></html>

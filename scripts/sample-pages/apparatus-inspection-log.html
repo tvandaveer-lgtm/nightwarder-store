@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+  :root { --navy:#1b365d; --navy2:#16304f; --gold:#f3e2a6; --green:#d7ead4;
+           --label:#d7e0ea; --peach:#f7ece0; --ink:#1a2330; --muted:#5c6774; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:#fff; color:var(--ink);
+    font-family: "IBM Plex Sans", "Liberation Sans", Arial, sans-serif; }
+  body { width:1600px; min-height:1000px; padding:22px 28px 28px; }
+  .banner { background:#c62828; color:#fff; font-weight:700; font-size:15px;
+    letter-spacing:.04em; padding:8px 14px; margin:0 0 12px; }
+  .badge { position:absolute; top:18px; right:28px; background:#111; color:#fff;
+    border-radius:999px; padding:7px 14px; font-size:13px; font-weight:700;
+    letter-spacing:.04em; }
+  .badge em { color:#f0c14b; font-style:normal; }
+  .wrap { position:relative; }
+  h1 { margin:4px 0 4px; font-size:26px; color:var(--navy); }
+  .sub { color:var(--muted); font-size:14px; font-style:italic; margin:0 0 12px; }
+  table { border-collapse:collapse; width:100%; font-size:15px; margin:0 0 14px; }
+  th { background:var(--navy); color:#fff; font-weight:650; text-align:left;
+    padding:7px 9px; border:1px solid var(--navy2); }
+  td { border:1px solid #c5cdd6; padding:6px 9px; }
+  td.l { background:var(--label); font-weight:600; width:22%; }
+  td.g { background:var(--gold); }
+  td.f { background:var(--green); font-variant-numeric:tabular-nums; }
+  td.p { background:var(--peach); }
+  tr.alt td { background:#fbf6f0; }
+  .sec { background:var(--navy); color:#fff; font-size:14px; font-weight:700;
+    letter-spacing:.06em; text-transform:uppercase; padding:7px 10px; margin:10px 0 0; }
+  .note { font-size:13px; color:var(--muted); font-style:italic; margin:2px 0 8px; }
+  .foot { font-size:12px; color:#8a93a0; margin-top:8px; }
+  .money { text-align:right; font-variant-numeric:tabular-nums; }
+</style></head>
+<body><div class="wrap"><div class="badge">EXAMPLE · <em>Station 99</em></div><div class="banner">EXAMPLE ONLY — FAKE FIGURES — DO NOT COPY INTO WORKING SHEETS</div>
+<h1>EXAMPLE VFD — Station 99 — Engine 99 toy inspection (2099)</h1>
+<p class="sub">Checklist items are examples of how a buyer might fill rows — not a mandated list.</p>
+<div class="sec">Sample roster</div>
+<table>
+  <tr><th>Unit ID</th><th>Type</th><th>Year</th><th>Status</th><th>Station</th><th>Hours</th><th>Notes</th></tr>
+  <tr><td class="g">E-99</td><td>Engine</td><td class="g">2090</td><td>In service</td><td>Station 99</td><td class="g">4400</td><td class="p">EXAMPLE</td></tr>
+</table>
+<div class="sec">Sample daily check rows</div>
+<table>
+  <tr><th>Date</th><th>Unit</th><th>Inspector</th><th>Item</th><th>Result</th><th>Notes</th><th>Overall</th></tr>
+  <tr><td class="g">2099-03-02</td><td>E-99</td><td>Engineer Example</td><td>Fluid levels</td><td class="f">Pass</td><td></td><td class="f">In service</td></tr>
+  <tr class="alt"><td class="g">2099-03-02</td><td>E-99</td><td>Engineer Example</td><td>Lights / siren</td><td class="f">Pass</td><td></td><td class="f">In service</td></tr>
+  <tr><td class="g">2099-03-02</td><td>E-99</td><td>Engineer Example</td><td>Example pump panel</td><td style="background:#f8d4d0;font-weight:700">Fail</td><td class="p">Gauge sticky</td><td class="p">See defect</td></tr>
+</table>
+<div class="sec">Sample defect</div>
+<table>
+  <tr><th>Date</th><th>Unit</th><th>Defect</th><th>Severity</th><th>OOS</th></tr>
+  <tr><td>2099-03-02</td><td>E-99</td><td class="g">Example pump panel gauge sticky</td><td>Minor</td><td class="f">N</td></tr>
+</table>
+<p class="foot">NightWarder — blank template. Not legal advice. Not a completed report. Formulas in the live file; typed values shown here.</p>
+</div></body></html>

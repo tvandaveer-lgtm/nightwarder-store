@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+  :root { --navy:#1b365d; --gold:#f3e2a6; --label:#d7e0ea; --ink:#1a2330; --muted:#5c6774; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:#fff; color:var(--ink);
+    font-family: "Liberation Serif", "Times New Roman", Georgia, serif; }
+  body { width:1200px; min-height:1550px; padding:22px 28px 28px; }
+  .meta { font-family:"IBM Plex Sans", Arial, sans-serif; font-size:12px; color:#8a93a0; }
+  .badge { position:absolute; top:18px; right:28px; background:#16304f; color:#fff;
+    border-radius:10px; padding:8px 14px; font-size:13px; font-weight:700;
+    font-family:"IBM Plex Sans", Arial, sans-serif; }
+  .badge em { color:#f0c14b; font-style:normal; }
+  .wrap { position:relative; }
+  h1 { margin:10px 0 4px; font-size:30px; color:var(--navy); }
+  .bar { background:var(--navy); color:#fff; font-size:20px; font-weight:700;
+    padding:10px 14px; margin:8px 0 8px; letter-spacing:.02em; }
+  .sub { font-style:italic; color:var(--muted); font-size:15px; margin:0 0 12px; }
+  table { border-collapse:collapse; width:100%; font-size:15px; margin:0 0 12px;
+    font-family:"IBM Plex Sans", Arial, sans-serif; }
+  th { background:var(--navy); color:#fff; font-weight:650; text-align:left;
+    padding:7px 8px; }
+  td { border:1px solid #b7c0cb; padding:7px 8px; }
+  td.l { background:var(--label); font-weight:600; width:24%; }
+  td.g { background:var(--gold); min-height:28px; }
+  .checks { display:grid; grid-template-columns:repeat(4,1fr); gap:8px;
+    background:var(--gold); padding:12px; border:1px solid #d4c48a;
+    font-family:"IBM Plex Sans", Arial, sans-serif; font-size:15px; }
+  .checks span { display:flex; align-items:center; gap:8px; }
+  .box { width:16px; height:16px; border:1.5px solid #1b365d; background:#fff; }
+  .foot { font-size:12px; color:#8a93a0; font-style:italic; margin-top:10px; }
+</style></head>
+<body><div class="wrap">
+<p class="meta">NightWarder | SKU-NW-EXP-01 | Blank template | Version 2026-09-03e</p>
+<div class="badge">EXAMPLE · <em>Station 99</em></div>
+<h1>2. Incident / near-miss header</h1>
+<p class="sub">Gold = input.</p>
+<table>
+  <tr><td class="l">Department / AHJ</td><td class="g"></td><td class="l">Date of event</td><td class="g"></td></tr>
+  <tr><td class="l">Location / address</td><td class="g"></td><td class="l">CAD / incident #</td><td class="g"></td></tr>
+  <tr><td class="l">IC / OIC</td><td class="g"></td><td class="l">Log / report #</td><td class="g"></td></tr>
+  <tr><td class="l">Time noticed</td><td class="g"></td><td class="l">Immediate risk still open?</td><td class="g"></td></tr>
+</table>
+<p class="sub">Type — check all that apply</p>
+<div class="checks" style="grid-template-columns:repeat(4,1fr)">
+  <span><i class="box"></i> Exposure</span>
+  <span><i class="box"></i> Near-miss</span>
+  <span><i class="box"></i> Injury-adjacent</span>
+  <span><i class="box"></i> Equipment failure</span>
+</div>
+<p class="sub" style="margin-top:12px">Brief nature — one radio-length phrase</p>
+<table><tr><td class="g" style="height:40px"></td></tr></table>
+<h1>3. Sequence of events</h1>
+<p class="sub">Chronological log. Copy times from CAD, the radio, or what you observed.</p>
+<table>
+  <tr><th style="width:16%">Time</th><th style="width:28%">Source (CAD / radio / observed)</th><th>Event</th></tr>
+  <tr><td class="g" style="height:32px"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="g" style="height:32px"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="g" style="height:32px"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="g" style="height:32px"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="g" style="height:32px"></td><td class="g"></td><td class="g"></td></tr>
+</table>
+</div></body></html>

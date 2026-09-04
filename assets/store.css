@@ -277,10 +277,20 @@ a { color: inherit; }
   border-bottom: 1px solid var(--line);
 }
 
+.thumb-btn {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
 .thumb img {
   width: 100%;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
+  object-position: top center;
 }
 
 .thumb-label {
@@ -468,14 +478,46 @@ a.buy:focus-visible,
   font-size: 0.82rem;
 }
 
+.lightbox {
+  max-width: min(1100px, 96vw);
+  max-height: 92vh;
+  padding: 0.7rem 0.7rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #0b0e12;
+  color: var(--text);
+}
+.lightbox::backdrop { background: rgba(6, 8, 11, 0.78); }
+.lightbox img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: calc(92vh - 3.2rem);
+  object-fit: contain;
+  background: #10151b;
+}
+.lightbox-close {
+  display: block;
+  margin: 0 0 0.55rem auto;
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.3rem 0.65rem;
+  font: inherit;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+.lightbox-close:hover { color: var(--text); }
+
 @media (min-width: 700px) {
   .hero-grid { grid-template-columns: 1.4fr 0.8fr; }
   .grid { grid-template-columns: 1fr 1fr; }
   .card.featured {
-    grid-template-columns: minmax(220px, 280px) 1fr;
+    grid-template-columns: 1fr;
   }
-  .card.featured .thumb { border-bottom: 0; border-right: 1px solid var(--line); }
-  .card.featured .thumb img { aspect-ratio: 3 / 4; height: 100%; }
+  .card.featured .thumb { border-bottom: 1px solid var(--line); border-right: 0; }
+  .card.featured .thumb img { aspect-ratio: 16 / 9; height: auto; }
   .footer-grid { grid-template-columns: 1.4fr 1fr 1fr; }
 }
 
