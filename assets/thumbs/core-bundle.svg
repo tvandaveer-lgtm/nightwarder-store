@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 480" width="360" height="480" role="img" aria-label="NightWarder kit cover: Core bundle">
+  <title>NightWarder kit cover — Core bundle</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b1612"/>
+      <stop offset="1" stop-color="#0b0d10"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8a3d16"/>
+      <stop offset="1" stop-color="#d4652a"/>
+    </linearGradient>
+    <pattern id="grid" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M18 0H0V18" fill="none" stroke="#f3ece4" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="360" height="480" fill="url(#bg)"/>
+  <rect width="360" height="480" fill="url(#grid)"/>
+  <rect x="0" y="0" width="360" height="10" fill="url(#bar)"/>
+  <rect x="18" y="18" width="324" height="444" rx="10" fill="none" stroke="#d4652a" stroke-opacity="0.28" stroke-width="1.5"/>
+
+  <g font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">
+    <text x="32" y="54" fill="#d4652a" font-size="11" font-weight="700" letter-spacing="2.4">NIGHTWARDER</text>
+    <text x="328" y="54" fill="#b9a89a" font-size="10" font-weight="600" letter-spacing="1.4" text-anchor="end">KIT COVER</text>
+  </g>
+  <line x1="32" y1="66" x2="328" y2="66" stroke="#d4652a" stroke-opacity="0.35" stroke-width="1"/>
+
+  
+      <g transform="translate(180 198)">
+        <rect x="-52" y="-8" width="88" height="58" rx="4" fill="#d4652a" opacity="0.35"/>
+        <rect x="-44" y="-18" width="88" height="58" rx="4" fill="#d4652a" opacity="0.6"/>
+        <rect x="-36" y="-28" width="88" height="58" rx="4" fill="#d4652a"/>
+        <rect x="-26" y="-14" width="68" height="4" rx="2" fill="#f3ece4" opacity="0.85"/>
+        <rect x="-26" y="-4" width="48" height="3" rx="1.5" fill="#f3ece4" opacity="0.45"/>
+        <rect x="-26" y="5" width="56" height="3" rx="1.5" fill="#f3ece4" opacity="0.45"/>
+      </g>
+
+  <g font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif">
+    <text x="32" y="310" fill="#f3ece4" font-size="26" font-weight="700">Core bundle</text>
+  </g>
+  <g font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">
+    <text x="32" y="336" fill="#b9a89a" font-size="13">Treasurer · AAR · Heat SOP</text>
+    <rect x="32" y="354" width="118" height="22" rx="11" fill="#d4652a" fill-opacity="0.16" stroke="#d4652a" stroke-opacity="0.45"/>
+    <text x="91" y="369" fill="#d4652a" font-size="10" font-weight="700" letter-spacing="1.2" text-anchor="middle">3-KIT PACK</text>
+    <text x="32" y="416" fill="#b9a89a" font-size="11">Blank template cover</text>
+    <text x="32" y="434" fill="#b9a89a" font-size="11" opacity="0.8">Not a live spreadsheet screenshot</text>
+  </g>
+</svg>

@@ -5,178 +5,264 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NightWarder — Blank kits for volunteer departments</title>
   <meta name="description" content="Blank paperwork kits for volunteer and small-department fire / EMS. Instant download after checkout. Not advice. Not an audit." />
-  <style>
-    :root {
-      --bg: #0f1216;
-      --card: #1a1f26;
-      --text: #e8eaed;
-      --muted: #9aa3ad;
-      --accent: #c45c26;
-      --border: #2a323c;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.45;
-    }
-    .wrap { max-width: 920px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
-    header { margin-bottom: 2rem; }
-    h1 { font-size: 1.75rem; font-weight: 700; margin: 0 0 0.5rem; letter-spacing: -0.02em; }
-    .lede { color: var(--muted); max-width: 40rem; margin: 0; }
-    .note {
-      margin: 1.25rem 0 2rem;
-      padding: 0.85rem 1rem;
-      border: 1px solid var(--border);
-      border-left: 3px solid var(--accent);
-      background: var(--card);
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-    h2 {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--muted);
-      margin: 2rem 0 0.75rem;
-      font-weight: 600;
-    }
-    .grid {
-      display: grid;
-      gap: 0.75rem;
-      grid-template-columns: 1fr;
-    }
-    @media (min-width: 640px) {
-      .grid { grid-template-columns: 1fr 1fr; }
-    }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1rem 1.1rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-    .card.featured {
-      grid-column: 1 / -1;
-      border-color: var(--accent);
-    }
-    .name { font-weight: 600; font-size: 1.05rem; }
-    .desc { color: var(--muted); font-size: 0.9rem; flex: 1; }
-    .row { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; margin-top: 0.35rem; }
-    .price { font-weight: 700; font-variant-numeric: tabular-nums; }
-    a.buy {
-      display: inline-block;
-      background: var(--accent);
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.9rem;
-      padding: 0.45rem 0.9rem;
-      border-radius: 6px;
-      white-space: nowrap;
-    }
-    a.buy:hover { filter: brightness(1.08); }
-    footer {
-      margin-top: 2.5rem;
-      padding-top: 1.25rem;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 0.85rem;
-    }
-  </style>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,650;6..72,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/store.css" />
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <h1>NightWarder</h1>
-      <p class="lede">Blank kits for volunteer and small-department paperwork. Fill them for your house. Instant download after checkout.</p>
-    </header>
+  <a class="skip" href="#catalog">Skip to catalog</a>
 
-    <div class="note">
+  <header class="site-header">
+    <div class="wrap inner">
+      <a class="brand" href="#top">
+        <img src="assets/mark.svg" alt="" width="36" height="36" />
+        <span>
+          <span class="brand-name">NightWarder</span>
+          <span class="brand-tag">Blank kits · nightwarder.com</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Store">
+        <a href="#core">Core</a>
+        <a class="hide-sm" href="#ops">Ops</a>
+        <a class="hide-sm" href="#word">Word kits</a>
+        <a href="mailto:nightwarder@agentmail.to">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Volunteer &amp; small-department paperwork</p>
+          <h1>Blank kits. Ready for your house.</h1>
+          <p class="lede">Fill them for your department. Instant download after checkout. These are templates — not completed reports, not legal advice, and not an audit.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#core">Browse the catalog</a>
+            <a class="btn btn-ghost" href="https://buy.stripe.com/fZubJ270Y3Asazi3z91Jm02">Get the core bundle · $49</a>
+          </div>
+          <ul class="trust">
+            <li>12 blank kits</li>
+            <li>Instant download after Stripe checkout</li>
+            <li>Support: nightwarder@agentmail.to</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="note" role="note">
+        These are blank templates for your department to adopt. They are not completed reports, not legal advice, and not an audit.
+        Heat and cold weather SOPs are templates only — not OSHA law.
+      </div>
+    </div>
+
+    <div id="catalog">
+      <section class="section" id="core">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>Core</h2>
+            <p class="section-kicker">Start here — or buy the three kits separately.</p>
+          </div>
+          <div class="grid">
+            <article class="card featured">
+              <div class="thumb">
+                <img src="assets/thumbs/core-bundle.svg" alt="Kit cover for the NightWarder core bundle" width="360" height="480" />
+                <span class="thumb-label">Kit cover</span>
+              </div>
+              <div class="card-body">
+                <span class="badge">Featured · 3 kits</span>
+                <div class="name">Core bundle</div>
+                <p class="desc">Treasurer report + incident AAR + heat illness SOP (all three). One checkout, three blank kits for the house.</p>
+                <ul class="includes">
+                  <li>Treasurer report</li>
+                  <li>Incident AAR</li>
+                  <li>Heat illness SOP</li>
+                </ul>
+                <div class="row"><span class="price">$49</span><a class="buy" href="https://buy.stripe.com/fZubJ270Y3Asazi3z91Jm02">Buy</a></div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb">
+                <img src="assets/thumbs/treasurer-report.svg" alt="Kit cover for the treasurer report workbook" width="360" height="480" />
+                <span class="thumb-label">Kit cover</span>
+              </div>
+              <div class="card-body">
+                <div class="name">Treasurer report</div>
+                <p class="desc">Monthly treasurer workbook template.</p>
+                <div class="row"><span class="price">$29</span><a class="buy" href="https://buy.stripe.com/9B614ofxu0ogfTCfhR1Jm00">Buy</a></div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb">
+                <img src="assets/thumbs/incident-aar.svg" alt="Kit cover for the incident after-action review packet" width="360" height="480" />
+                <span class="thumb-label">Kit cover</span>
+              </div>
+              <div class="card-body">
+                <div class="name">Incident AAR</div>
+                <p class="desc">After-action review packet template.</p>
+                <div class="row"><span class="price">$19</span><a class="buy" href="https://buy.stripe.com/28E9AUada9YQ5eY9Xx1Jm01">Buy</a></div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb">
+                <img src="assets/thumbs/heat-illness-sop.svg" alt="Kit cover for the heat illness SOP template" width="360" height="480" />
+                <span class="thumb-label">Kit cover</span>
+              </div>
+              <div class="card-body">
+                <div class="name">Heat illness SOP</div>
+                <p class="desc">Blank heat illness SOP template. Not OSHA law.</p>
+                <div class="row"><span class="price">$19</span><a class="buy" href="https://buy.stripe.com/fZudRa5WU5IA36Q2v51Jm03">Buy</a></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="ops">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>Ops trackers</h2>
+            <p class="section-kicker">Workbooks and logs for the year.</p>
+          </div>
+          <div class="grid">
+            <article class="card">
+              <div class="thumb">
+                <img src="assets/thumbs/training-cert-tracker.svg" alt="Kit cover for the training certification tracker" width="360" height="480" />
+                <span class="thumb-label">Kit cover</span>
+              </div>
+              <div class="card-body">
+                <div class="name">Training cert tracker</div>
+                <p class="desc">Track member certifications and renewals.</p>
+                <div class="row"><span class="price">$29</span><a class="buy" href="https://buy.stripe.com/00w14o2KI2wo4aU8Tt1Jm04">Buy</a></div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb">
+                <img src="assets/thumbs/annual-budget-builder.svg" alt="Kit cover for the annual budget builder" width="360" height="480" />
+                <span class="thumb-label">Kit cover</span>
+              </div>
+              <div class="card-body">
+                <div class="name">Annual budget builder</div>
+                <p class="desc">Department annual budget workbook.</p>
+                <div class="row"><span class="price">$24</span><a class="buy" href="https://buy.stripe.com/28EdRaetqdb2ePyb1B1Jm05">Buy</a></div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb">
+                <img src="assets/thumbs/apparatus-inspection-log.svg" alt="Kit cover for the apparatus inspection log" width="360" height="480" />
+                <span class="thumb-label">Kit cover</span>
+              </div>
+              <div class="card-body">
+                <div class="name">Apparatus inspection log</div>
+                <p class="desc">Blank apparatus inspection log.</p>
+                <div class="row"><span class="price">$19</span><a class="buy" href="https://buy.stripe.com/9B6cN61GE4Ew0YI8Tt1Jm06">Buy</a></div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb">
+                <img src="assets/thumbs/ppe-scba-tracker.svg" alt="Kit cover for the PPE and SCBA tracker" width="360" height="480" />
+                <span class="thumb-label">Kit cover</span>
+              </div>
+              <div class="card-body">
+                <div class="name">PPE / SCBA tracker</div>
+                <p class="desc">PPE and SCBA inventory / inspection tracker.</p>
+                <div class="row"><span class="price">$19</span><a class="buy" href="https://buy.stripe.com/3cI4gAcli2wobDmc5F1Jm07">Buy</a></div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb">
+                <img src="assets/thumbs/donation-register.svg" alt="Kit cover for the donation register" width="360" height="480" />
+                <span class="thumb-label">Kit cover</span>
+              </div>
+              <div class="card-body">
+                <div class="name">Donation register</div>
+                <p class="desc">Donation and fundraising register.</p>
+                <div class="row"><span class="price">$19</span><a class="buy" href="https://buy.stripe.com/cNi8wQfxu6ME22MedN1Jm08">Buy</a></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="word">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>Word kits</h2>
+            <p class="section-kicker">Packets and SOP templates.</p>
+          </div>
+          <div class="grid">
+            <article class="card">
+              <div class="thumb">
+                <img src="assets/thumbs/exposure-near-miss-log.svg" alt="Kit cover for the exposure and near-miss log" width="360" height="480" />
+                <span class="thumb-label">Kit cover</span>
+              </div>
+              <div class="card-body">
+                <div class="name">Exposure / near-miss log</div>
+                <p class="desc">Exposure and near-miss log template.</p>
+                <div class="row"><span class="price">$19</span><a class="buy" href="https://buy.stripe.com/8x2eVe70Yc6Y5eY7Pp1Jm09">Buy</a></div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb">
+                <img src="assets/thumbs/cold-weather-sop.svg" alt="Kit cover for the cold weather SOP template" width="360" height="480" />
+                <span class="thumb-label">Kit cover</span>
+              </div>
+              <div class="card-body">
+                <div class="name">Cold weather SOP</div>
+                <p class="desc">Blank cold weather SOP. Not OSHA law.</p>
+                <div class="row"><span class="price">$19</span><a class="buy" href="https://buy.stripe.com/cNi7sM8524EwgXGfhR1Jm0b">Buy</a></div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb">
+                <img src="assets/thumbs/member-meeting-packet.svg" alt="Kit cover for the member meeting packet" width="360" height="480" />
+                <span class="thumb-label">Kit cover</span>
+              </div>
+              <div class="card-body">
+                <div class="name">Member meeting packet</div>
+                <p class="desc">Member meeting packet template.</p>
+                <div class="row"><span class="price">$19</span><a class="buy" href="https://buy.stripe.com/3cI3cw0CA9YQ22M9Xx1Jm0a">Buy</a></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-brand">NightWarder</p>
+        <p>Blank kits for volunteer and small-department fire / EMS. Instant download after Stripe checkout.</p>
+      </div>
+      <div>
+        <h3>Catalog</h3>
+        <ul>
+          <li><a href="#core">Core</a></li>
+          <li><a href="#ops">Ops trackers</a></li>
+          <li><a href="#word">Word kits</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <ul>
+          <li><a href="mailto:nightwarder@agentmail.to">nightwarder@agentmail.to</a></li>
+          <li>Fulfillment from this address only</li>
+          <li>https://nightwarder.com/</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap foot-note">
       These are blank templates for your department to adopt. They are not completed reports, not legal advice, and not an audit.
       Heat and cold weather SOPs are templates only — not OSHA law.
+      Cover art on each card is a kit cover, not a screenshot of a live sheet.
+      <br /><br />
+      Catalog v2026-09-04 · nightwarder.com
     </div>
-
-    <h2>Core</h2>
-    <div class="grid">
-      <div class="card featured">
-        <div class="name">Core bundle</div>
-        <div class="desc">Treasurer report + incident AAR + heat illness SOP (all three).</div>
-        <div class="row"><span class="price">$49</span><a class="buy" href="https://buy.stripe.com/fZubJ270Y3Asazi3z91Jm02">Buy</a></div>
-      </div>
-      <div class="card">
-        <div class="name">Treasurer report</div>
-        <div class="desc">Monthly treasurer workbook template.</div>
-        <div class="row"><span class="price">$29</span><a class="buy" href="https://buy.stripe.com/9B614ofxu0ogfTCfhR1Jm00">Buy</a></div>
-      </div>
-      <div class="card">
-        <div class="name">Incident AAR</div>
-        <div class="desc">After-action review packet template.</div>
-        <div class="row"><span class="price">$19</span><a class="buy" href="https://buy.stripe.com/28E9AUada9YQ5eY9Xx1Jm01">Buy</a></div>
-      </div>
-      <div class="card">
-        <div class="name">Heat illness SOP</div>
-        <div class="desc">Blank heat illness SOP template. Not OSHA law.</div>
-        <div class="row"><span class="price">$19</span><a class="buy" href="https://buy.stripe.com/fZudRa5WU5IA36Q2v51Jm03">Buy</a></div>
-      </div>
-    </div>
-
-    <h2>Ops trackers</h2>
-    <div class="grid">
-      <div class="card">
-        <div class="name">Training cert tracker</div>
-        <div class="desc">Track member certifications and renewals.</div>
-        <div class="row"><span class="price">$29</span><a class="buy" href="https://buy.stripe.com/00w14o2KI2wo4aU8Tt1Jm04">Buy</a></div>
-      </div>
-      <div class="card">
-        <div class="name">Annual budget builder</div>
-        <div class="desc">Department annual budget workbook.</div>
-        <div class="row"><span class="price">$24</span><a class="buy" href="https://buy.stripe.com/28EdRaetqdb2ePyb1B1Jm05">Buy</a></div>
-      </div>
-      <div class="card">
-        <div class="name">Apparatus inspection log</div>
-        <div class="desc">Blank apparatus inspection log.</div>
-        <div class="row"><span class="price">$19</span><a class="buy" href="https://buy.stripe.com/9B6cN61GE4Ew0YI8Tt1Jm06">Buy</a></div>
-      </div>
-      <div class="card">
-        <div class="name">PPE / SCBA tracker</div>
-        <div class="desc">PPE and SCBA inventory / inspection tracker.</div>
-        <div class="row"><span class="price">$19</span><a class="buy" href="https://buy.stripe.com/3cI4gAcli2wobDmc5F1Jm07">Buy</a></div>
-      </div>
-      <div class="card">
-        <div class="name">Donation register</div>
-        <div class="desc">Donation and fundraising register.</div>
-        <div class="row"><span class="price">$19</span><a class="buy" href="https://buy.stripe.com/cNi8wQfxu6ME22MedN1Jm08">Buy</a></div>
-      </div>
-    </div>
-
-    <h2>Word kits</h2>
-    <div class="grid">
-      <div class="card">
-        <div class="name">Exposure / near-miss log</div>
-        <div class="desc">Exposure and near-miss log template.</div>
-        <div class="row"><span class="price">$19</span><a class="buy" href="https://buy.stripe.com/8x2eVe70Yc6Y5eY7Pp1Jm09">Buy</a></div>
-      </div>
-      <div class="card">
-        <div class="name">Cold weather SOP</div>
-        <div class="desc">Blank cold weather SOP. Not OSHA law.</div>
-        <div class="row"><span class="price">$19</span><a class="buy" href="https://buy.stripe.com/cNi7sM8524EwgXGfhR1Jm0b">Buy</a></div>
-      </div>
-      <div class="card">
-        <div class="name">Member meeting packet</div>
-        <div class="desc">Member meeting packet template.</div>
-        <div class="row"><span class="price">$19</span><a class="buy" href="https://buy.stripe.com/3cI3cw0CA9YQ22M9Xx1Jm0a">Buy</a></div>
-      </div>
-    </div>
-
-    <footer>
-      NightWarder · Instant download after Stripe checkout · Support: nightwarder@agentmail.to<br />
-      Catalog v2026-09-04 · Fulfillment from nightwarder@agentmail.to only
-    </footer>
-  </div>
+  </footer>
 </body>
 </html>
