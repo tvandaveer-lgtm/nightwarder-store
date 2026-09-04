@@ -90,6 +90,16 @@ DOC_CSS = f"""
   .checks span {{ display:flex; align-items:center; gap:8px; }}
   .box {{ width:16px; height:16px; border:1.5px solid #1b365d; background:#fff; }}
   .foot {{ font-size:12px; color:#8a93a0; font-style:italic; margin-top:10px; }}
+  h2 {{ margin:14px 0 4px; font-size:22px; color:var(--navy); }}
+  h3 {{ margin:8px 0 4px; font-size:16px; color:var(--navy);
+    font-family:"IBM Plex Sans", Arial, sans-serif; }}
+  .rule {{ border:0; border-top:2px solid var(--navy); margin:4px 0 12px; }}
+  .ver {{ font-style:italic; font-size:12px; color:#8a93a0; margin:0 0 2px; }}
+  .warn {{ border:2px solid #e0c36a; background:#fff6d0; padding:10px 12px; margin:6px 0 12px;
+    font-family:"IBM Plex Sans", Arial, sans-serif; font-size:14px; }}
+  .goldbox {{ background:var(--gold); border:2px solid #c4a24a; padding:10px 12px; margin:8px 0 12px;
+    font-family:"IBM Plex Sans", Arial, sans-serif; font-size:13.5px; font-weight:700; }}
+  table.goldframe {{ outline:3px solid #c4a24a; }}
 """
 
 
@@ -464,6 +474,129 @@ PAGES["member-meeting-packet"] = (
   <tr><td class="l">Chief / presiding</td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
   <tr><td class="l">Secretary</td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
   <tr><td class="l">Treasurer</td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
+</table>
+""",
+)
+
+PAGES["hot-work-permit"] = (
+    "doc",
+    1200,
+    1550,
+    f"""
+<p class="meta">NightWarder | SKU-NW-HWP-01 | Blank template</p>
+<p class="ver">Ver. 2026-09-04a</p>
+{badge()}
+<hr class="rule"/>
+<h1>6. PPE blank list</h1>
+<p class="sub">Buyer lists PPE required for THIS job. Empty rows until known. Do not invent.</p>
+<table>
+  <tr><th style="width:8%">#</th><th>PPE item (buyer lists)</th><th style="width:36%">Confirmed (Y/N/NA + initials)</th></tr>
+  <tr><td>1</td><td class="g" style="height:26px"></td><td class="g"></td></tr>
+  <tr><td>2</td><td class="g" style="height:26px"></td><td class="g"></td></tr>
+  <tr><td>3</td><td class="g" style="height:26px"></td><td class="g"></td></tr>
+  <tr><td>4</td><td class="g" style="height:26px"></td><td class="g"></td></tr>
+  <tr><td>5</td><td class="g" style="height:26px"></td><td class="g"></td></tr>
+  <tr><td>6</td><td class="g" style="height:26px"></td><td class="g"></td></tr>
+  <tr><td>7</td><td class="g" style="height:26px"></td><td class="g"></td></tr>
+</table>
+<h1>7. Authorizations</h1>
+<h3>7.1 Signatures before work starts</h3>
+<p class="sub">Gold blanks. A blank signature means this is still a template — not a completed authorization.</p>
+<table class="goldframe">
+  <tr><th style="width:26%">Role</th><th>Printed name</th><th>Signature</th><th style="width:16%">Date</th></tr>
+  <tr><td class="l">Operator</td><td class="g" style="height:28px"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="l">Fire watch</td><td class="g" style="height:28px"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="l">Authorizer</td><td class="g" style="height:28px"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="l">Contact / other (title):</td><td class="g" style="height:28px"></td><td class="g"></td><td class="g"></td></tr>
+</table>
+<div class="goldbox">NOT A COMPLETED AUTHORIZATION. Unsigned gold rows mean this permit is not authorized. NightWarder signature blocks are blanks — not AHJ approval and not OSHA permission.</div>
+<h1>8. Close-out</h1>
+<p class="sub">Complete when work stops or the permit is cancelled.</p>
+<table>
+  <tr><td class="l">Work stopped? (Y / N + time)</td><td class="g" style="height:28px"></td></tr>
+</table>
+""",
+)
+
+PAGES["confined-space-entry-permit"] = (
+    "doc",
+    1200,
+    1550,
+    f"""
+<p class="meta">NightWarder | SKU-NW-CSE-01 | Blank template</p>
+<p class="ver">Ver. 2026-09-04c</p>
+{badge()}
+<hr class="rule"/>
+<h1>4.1 Isolation / energy control note</h1>
+<div class="warn"><strong>LOTO IS SEPARATE.</strong> This is NOT a full lockout/tagout procedure. If energy isolation is required, follow [Department]'s separate LOTO process and record a brief status note below.</div>
+<table>
+  <tr><td class="l">Isolation / LOTO status note (not a full LOTO procedure)</td><td class="g" style="height:32px"></td></tr>
+  <tr><td class="l">LOTO procedure reference / permit # (if any)</td><td class="g" style="height:28px"></td></tr>
+</table>
+<h1>5. Atmosphere testing log</h1>
+<p class="sub">Empty rows. Fill only from real tests. Do not invent O2 / LEL / toxic values. Columns are INPUT blanks — not claimed OSHA limits.</p>
+<table>
+  <tr><th>Time</th><th>O2</th><th>LEL</th><th>H2S (toxic)</th><th>CO (toxic)</th><th>Other toxic</th><th>Tester</th></tr>
+  <tr><td class="g" style="height:24px"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="g" style="height:24px"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="g" style="height:24px"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="g" style="height:24px"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="g" style="height:24px"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="g" style="height:24px"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="g" style="height:24px"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="g" style="height:24px"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
+</table>
+<table>
+  <tr><td class="l">Instrument ID / calibration note (if known)</td><td class="g" style="height:28px"></td></tr>
+  <tr><td class="l">Acceptable ranges used (local / AHJ — blank until set)</td><td class="g" style="height:28px"></td></tr>
+</table>
+<h1>6. Rescue plan / retrieval and communication</h1>
+<p class="sub">Blank fields only. Do not invent rescue capability. If [Department] cannot support entry rescue as required locally, do not authorize entry on this form alone.</p>
+<table>
+  <tr><td class="l">Rescue / retrieval note</td><td class="g" style="height:28px"></td></tr>
+</table>
+""",
+)
+
+PAGES["permit-to-work"] = (
+    "doc",
+    1200,
+    1550,
+    f"""
+<p class="meta">NightWarder | SKU-NW-PTW-01 | Blank template</p>
+<p class="ver">Ver. 2026-09-04a</p>
+{badge()}
+<hr class="rule"/>
+<table>
+  <tr><td class="l">Emergency contact / radio channel for this job</td><td class="g" style="height:30px"></td></tr>
+</table>
+<table>
+  <tr><th>Item (label only — buyer completes)</th><th style="width:14%">Y / N / NA</th><th style="width:28%">Notes / initials</th></tr>
+  <tr><td class="l">Briefing held with performing party</td><td></td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Area authority aware of work window</td><td></td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Required specific permits attached / referenced</td><td></td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Other precaution (describe in notes)</td><td></td><td class="g" style="height:26px"></td></tr>
+</table>
+<h1>5. Approvals</h1>
+<h3>5.1 Authorization signatures</h3>
+<p class="sub">Gold blanks. A blank signature means this is still a template — not a completed authorization.</p>
+<table class="goldframe">
+  <tr><th style="width:26%">Role</th><th>Printed name</th><th>Signature</th><th style="width:16%">Date</th></tr>
+  <tr><td class="l">Requestor</td><td class="g" style="height:28px"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="l">Area / officer authority</td><td class="g" style="height:28px"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="l">Safety (optional)</td><td class="g" style="height:28px"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="l">Other (title):</td><td class="g" style="height:28px"></td><td class="g"></td><td class="g"></td></tr>
+</table>
+<div class="goldbox">NOT A COMPLETED AUTHORIZATION. Unsigned gold rows mean this cover is not authorized. Not AHJ approval. Not OSHA permission. Does not replace specific permits.</div>
+<h1>6. Suspend / close-out</h1>
+<p class="sub">Use when work is suspended, cancelled, or completed.</p>
+<table>
+  <tr><td class="l">Status (Active / Suspended / Closed)</td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Suspend reason / time (if used)</td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Work complete? (Y / N + time)</td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Area restored / inspected? (Y / N + by whom)</td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Closed by (printed name)</td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Close-out signature / date</td><td class="g" style="height:26px"></td></tr>
 </table>
 """,
 )

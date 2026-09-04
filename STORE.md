@@ -10,7 +10,7 @@
 
 **Fulfillment / support:** `nightwarder@agentmail.to` only.
 
-**Disclaimer (on page):** blank templates for the department to adopt. Not completed reports, not legal advice, and not an audit. Heat and cold weather SOPs are templates only — not OSHA law.
+**Disclaimer (on page):** blank templates for the department to adopt. Not completed reports, not legal advice, and not an audit. Heat and cold weather SOPs are templates only — not OSHA law. Permits are blank templates — not completed authorizations, not AHJ approval, and not OSHA law.
 
 **Thumbnails:** EXAMPLE / Station 99 demo screenshots of the live kits (fake 2099 figures). Not abstract kit-cover art. Catalog cards use the PNG samples; click opens a lightbox.
 
@@ -30,10 +30,13 @@
 | Exposure / near-miss log | `assets/thumbs/exposure-near-miss-log.png` |
 | Cold weather SOP | `assets/thumbs/cold-weather-sop.png` |
 | Member meeting packet | `assets/thumbs/member-meeting-packet.png` |
+| Hot work permit | `assets/thumbs/hot-work-permit.png` |
+| Confined space entry permit | `assets/thumbs/confined-space-entry-permit.png` |
+| Permit-to-work | `assets/thumbs/permit-to-work.png` |
 
 Also: `assets/mark.svg` (site mark), `assets/store.css`. Sample pages: `scripts/sample-pages/`. Rebuild: `scripts/generate_samples.py`.
 
-## Catalog (12) — buy URLs frozen
+## Catalog (15) — buy URLs frozen
 
 ### Core
 
@@ -61,6 +64,14 @@ Also: `assets/mark.svg` (site mark), `assets/store.css`. Sample pages: `scripts/
 | Exposure / near-miss log | $19 | https://buy.stripe.com/8x2eVe70Yc6Y5eY7Pp1Jm09 |
 | Cold weather SOP | $19 | https://buy.stripe.com/cNi7sM8524EwgXGfhR1Jm0b |
 | Member meeting packet | $19 | https://buy.stripe.com/3cI3cw0CA9YQ22M9Xx1Jm0a |
+
+### Safety permits (Safety Pack A)
+
+| Product | Price | Buy |
+|---|---|---|
+| Hot work permit | $19 | https://buy.stripe.com/eVq3cwbhe8UMfTC7Pp1Jm0c |
+| Confined space entry permit | $24 | https://buy.stripe.com/aFadRadpmc6Y6j2d9J1Jm0d |
+| Permit-to-work | $19 | https://buy.stripe.com/dRm5kE3OM5IAgXGfhR1Jm0e |
 
 ## Notes
 
