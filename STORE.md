@@ -1,6 +1,6 @@
 # NightWarder store — 2026-09-04
 
-**Status:** live visual rework. Catalog date 2026-09-04.
+**Status:** live sample screenshots. Catalog date 2026-09-04.
 
 **Live URL:** https://nightwarder.com/
 
@@ -12,26 +12,26 @@
 
 **Disclaimer (on page):** blank templates for the department to adopt. Not completed reports, not legal advice, and not an audit. Heat and cold weather SOPs are templates only — not OSHA law.
 
-**Thumbnails:** honest kit-cover art (SVG), labeled as covers — not screenshots of live spreadsheet sheets.
+**Thumbnails:** EXAMPLE / Station 99 demo screenshots of the live kits (fake 2099 figures). Not abstract kit-cover art. Catalog cards use the PNG samples; click opens a lightbox.
 
-## Asset map (SKU → thumb)
+## Asset map (SKU → screenshot)
 
-| SKU | Thumb |
+| SKU | Screenshot |
 |---|---|
-| Core bundle (TR+AAR+HEAT) | `assets/thumbs/core-bundle.svg` |
-| Treasurer report | `assets/thumbs/treasurer-report.svg` |
-| Incident AAR | `assets/thumbs/incident-aar.svg` |
-| Heat illness SOP | `assets/thumbs/heat-illness-sop.svg` |
-| Training cert tracker | `assets/thumbs/training-cert-tracker.svg` |
-| Annual budget builder | `assets/thumbs/annual-budget-builder.svg` |
-| Apparatus inspection log | `assets/thumbs/apparatus-inspection-log.svg` |
-| PPE / SCBA tracker | `assets/thumbs/ppe-scba-tracker.svg` |
-| Donation register | `assets/thumbs/donation-register.svg` |
-| Exposure / near-miss log | `assets/thumbs/exposure-near-miss-log.svg` |
-| Cold weather SOP | `assets/thumbs/cold-weather-sop.svg` |
-| Member meeting packet | `assets/thumbs/member-meeting-packet.svg` |
+| Core bundle (TR+AAR+HEAT) | `assets/thumbs/core-bundle.png` |
+| Treasurer report | `assets/thumbs/treasurer-report.png` |
+| Incident AAR | `assets/thumbs/incident-aar.png` |
+| Heat illness SOP | `assets/thumbs/heat-illness-sop.png` |
+| Training cert tracker | `assets/thumbs/training-cert-tracker.png` |
+| Annual budget builder | `assets/thumbs/annual-budget-builder.png` |
+| Apparatus inspection log | `assets/thumbs/apparatus-inspection-log.png` |
+| PPE / SCBA tracker | `assets/thumbs/ppe-scba-tracker.png` |
+| Donation register | `assets/thumbs/donation-register.png` |
+| Exposure / near-miss log | `assets/thumbs/exposure-near-miss-log.png` |
+| Cold weather SOP | `assets/thumbs/cold-weather-sop.png` |
+| Member meeting packet | `assets/thumbs/member-meeting-packet.png` |
 
-Also: `assets/mark.svg` (site mark), `assets/store.css`.
+Also: `assets/mark.svg` (site mark), `assets/store.css`. Sample pages: `scripts/sample-pages/`. Rebuild: `scripts/generate_samples.py`.
 
 ## Catalog (12) — buy URLs frozen
 
@@ -65,4 +65,5 @@ Also: `assets/mark.svg` (site mark), `assets/store.css`.
 ## Notes
 
 - Public storefront prefers nightwarder.com. Avoid personal-name leakage in public copy and asset paths.
-- Cover generator: `scripts/generate_thumbs.py` (rebuild only; do not change buy links).
+- Samples are sterile EXAMPLE / Station 99 / 2099 demo screenshots of the live kits.
+- Catalog date 2026-09-04.

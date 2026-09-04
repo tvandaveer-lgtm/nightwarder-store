@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+  :root { --navy:#1b365d; --navy2:#16304f; --gold:#f3e2a6; --green:#d7ead4;
+           --label:#d7e0ea; --peach:#f7ece0; --ink:#1a2330; --muted:#5c6774; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:#fff; color:var(--ink);
+    font-family: "IBM Plex Sans", "Liberation Sans", Arial, sans-serif; }
+  body { width:1600px; min-height:1000px; padding:22px 28px 28px; }
+  .banner { background:#c62828; color:#fff; font-weight:700; font-size:15px;
+    letter-spacing:.04em; padding:8px 14px; margin:0 0 12px; }
+  .badge { position:absolute; top:18px; right:28px; background:#111; color:#fff;
+    border-radius:999px; padding:7px 14px; font-size:13px; font-weight:700;
+    letter-spacing:.04em; }
+  .badge em { color:#f0c14b; font-style:normal; }
+  .wrap { position:relative; }
+  h1 { margin:4px 0 4px; font-size:26px; color:var(--navy); }
+  .sub { color:var(--muted); font-size:14px; font-style:italic; margin:0 0 12px; }
+  table { border-collapse:collapse; width:100%; font-size:15px; margin:0 0 14px; }
+  th { background:var(--navy); color:#fff; font-weight:650; text-align:left;
+    padding:7px 9px; border:1px solid var(--navy2); }
+  td { border:1px solid #c5cdd6; padding:6px 9px; }
+  td.l { background:var(--label); font-weight:600; width:22%; }
+  td.g { background:var(--gold); }
+  td.f { background:var(--green); font-variant-numeric:tabular-nums; }
+  td.p { background:var(--peach); }
+  tr.alt td { background:#fbf6f0; }
+  .sec { background:var(--navy); color:#fff; font-size:14px; font-weight:700;
+    letter-spacing:.06em; text-transform:uppercase; padding:7px 10px; margin:10px 0 0; }
+  .note { font-size:13px; color:var(--muted); font-style:italic; margin:2px 0 8px; }
+  .foot { font-size:12px; color:#8a93a0; margin-top:8px; }
+  .money { text-align:right; font-variant-numeric:tabular-nums; }
+</style></head>
+<body><div class="wrap"><div class="badge">EXAMPLE · <em>Station 99</em></div><div class="banner">EXAMPLE ONLY — FAKE FIGURES — DO NOT COPY INTO WORKING SHEETS</div>
+<h1>EXAMPLE VFD — Station 99 — FY2099 budget toy figures</h1>
+<p class="sub">FAKE ONLY. Do not copy into Chart of Accounts / Budget Draft / Monthly Phasing. Variance math for illustration only.</p>
+<table>
+  <tr><th>Code</th><th>Description</th><th>Type</th><th>Prior actual</th><th>Proposed</th><th>Variance $</th><th>Var %</th><th>Notes</th></tr>
+  <tr><td>E-100</td><td>Example Fuel</td><td>Expense</td><td class="g money">$8,000.00</td><td class="g money">$9,000.00</td><td class="f money">$1,000.00</td><td class="f">12.5%</td><td class="p">FAKE</td></tr>
+  <tr class="alt"><td>E-200</td><td>Example Insurance</td><td>Expense</td><td class="g money">$12,000.00</td><td class="g money">$12,500.00</td><td class="f money">$500.00</td><td class="f">4.2%</td><td class="p">FAKE</td></tr>
+  <tr><td>E-300</td><td>Example Training</td><td>Expense</td><td class="g money">$3,000.00</td><td class="g money">$3,500.00</td><td class="f money">$500.00</td><td class="f">16.7%</td><td class="p">FAKE</td></tr>
+  <tr class="alt"><td>E-400</td><td>Example Apparatus</td><td>Expense</td><td class="g money">$15,000.00</td><td class="g money">$10,000.00</td><td class="f money">($5,000.00)</td><td class="f">-33.3%</td><td class="p">FAKE — lower one-time</td></tr>
+  <tr><td colspan="4" class="l">Totals</td><td class="f money">$35,000.00</td><td class="f money">($3,000.00)</td><td class="f"></td><td></td></tr>
+</table>
+<p class="note">Lines are for illustration of variance math only — not a benchmark for a real budget.</p>
+<p class="foot">NightWarder — blank template. Not legal advice. Not a completed report.</p>
+</div></body></html>

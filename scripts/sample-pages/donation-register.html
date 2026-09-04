@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+  :root { --navy:#1b365d; --navy2:#16304f; --gold:#f3e2a6; --green:#d7ead4;
+           --label:#d7e0ea; --peach:#f7ece0; --ink:#1a2330; --muted:#5c6774; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:#fff; color:var(--ink);
+    font-family: "IBM Plex Sans", "Liberation Sans", Arial, sans-serif; }
+  body { width:1600px; min-height:1000px; padding:22px 28px 28px; }
+  .banner { background:#c62828; color:#fff; font-weight:700; font-size:15px;
+    letter-spacing:.04em; padding:8px 14px; margin:0 0 12px; }
+  .badge { position:absolute; top:18px; right:28px; background:#111; color:#fff;
+    border-radius:999px; padding:7px 14px; font-size:13px; font-weight:700;
+    letter-spacing:.04em; }
+  .badge em { color:#f0c14b; font-style:normal; }
+  .wrap { position:relative; }
+  h1 { margin:4px 0 4px; font-size:26px; color:var(--navy); }
+  .sub { color:var(--muted); font-size:14px; font-style:italic; margin:0 0 12px; }
+  table { border-collapse:collapse; width:100%; font-size:15px; margin:0 0 14px; }
+  th { background:var(--navy); color:#fff; font-weight:650; text-align:left;
+    padding:7px 9px; border:1px solid var(--navy2); }
+  td { border:1px solid #c5cdd6; padding:6px 9px; }
+  td.l { background:var(--label); font-weight:600; width:22%; }
+  td.g { background:var(--gold); }
+  td.f { background:var(--green); font-variant-numeric:tabular-nums; }
+  td.p { background:var(--peach); }
+  tr.alt td { background:#fbf6f0; }
+  .sec { background:var(--navy); color:#fff; font-size:14px; font-weight:700;
+    letter-spacing:.06em; text-transform:uppercase; padding:7px 10px; margin:10px 0 0; }
+  .note { font-size:13px; color:var(--muted); font-style:italic; margin:2px 0 8px; }
+  .foot { font-size:12px; color:#8a93a0; margin-top:8px; }
+  .money { text-align:right; font-variant-numeric:tabular-nums; }
+</style></head>
+<body><div class="wrap"><div class="badge">EXAMPLE · <em>Station 99</em></div><div class="banner">EXAMPLE ONLY — FAKE FIGURES — DO NOT COPY INTO WORKING SHEETS</div>
+<h1>EXAMPLE VFD — Station 99 — Donation toy register (2099)</h1>
+<p class="sub">FAKE ONLY. Not tax advice. Not a Form 990.</p>
+<div class="sec">Sample receipts</div>
+<table>
+  <tr><th>Date</th><th>Receipt #</th><th>Donor</th><th>Amount</th><th>Method</th><th>Rest.?</th><th>Purpose</th><th>Batch</th><th>Thank-you</th></tr>
+  <tr><td class="g">2099-03-02</td><td>R-01</td><td class="g">Donor Example A</td><td class="g money">$250.00</td><td>Check</td><td>N</td><td class="p">General</td><td>DEP-01</td><td class="f">Y</td></tr>
+  <tr class="alt"><td class="g">2099-03-02</td><td>R-02</td><td class="g">Donor Example B</td><td class="g money">$350.00</td><td>Check</td><td>N</td><td class="p">General</td><td>DEP-01</td><td class="f">Y</td></tr>
+  <tr><td class="g">2099-03-10</td><td>R-03</td><td class="g">Donor Example C</td><td class="g money">$50.00</td><td>Cash</td><td>N</td><td class="p">General</td><td></td><td></td></tr>
+  <tr><td colspan="3" class="l">TOTAL</td><td class="f money">$650.00</td><td colspan="5"></td></tr>
+</table>
+<div class="sec">Sample deposit tie-out</div>
+<table>
+  <tr><th>Batch</th><th>Date</th><th>Bank $</th><th>Notes</th></tr>
+  <tr><td>DEP-01</td><td class="g">2099-03-03</td><td class="f money">$600.00</td><td class="p">Matches R-01 + R-02. R-03 left open on purpose so the buyer sees an unmatched receipt.</td></tr>
+</table>
+<p class="foot">NightWarder — blank template. Not legal advice. Not a completed report. Not tax advice. Not a Form 990.</p>
+</div></body></html>
