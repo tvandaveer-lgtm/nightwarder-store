@@ -19,7 +19,10 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
 
 body {
   margin: 0;
@@ -97,6 +100,52 @@ a { color: inherit; }
   color: var(--muted);
   letter-spacing: 0.04em;
   font-weight: 500;
+}
+
+.nav-menu {
+  display: none;
+  margin: 0;
+}
+
+.nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  padding: 0 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.nav-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.nav-toggle-icon {
+  display: block;
+  width: 1.05rem;
+  height: 2px;
+  background: currentColor;
+  box-shadow: 0 -5px 0 currentColor, 0 5px 0 currentColor;
+}
+
+.nav-toggle:hover,
+.nav-toggle:focus-visible {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
 }
 
 .nav {
@@ -362,6 +411,7 @@ a.buy:hover { filter: brightness(1.08); }
 a.buy:focus-visible,
 .btn:focus-visible,
 .nav a:focus-visible,
+.nav-toggle:focus-visible,
 .brand:focus-visible {
   outline: 2px solid #f0c09a;
   outline-offset: 2px;
@@ -526,7 +576,87 @@ a.buy:focus-visible,
   .hero { padding: 4.25rem 0 2.75rem; }
 }
 
-@media (max-width: 420px) {
-  .nav .hide-sm { display: none; }
-  .hero { padding: 2.2rem 0 1.6rem; }
+@media (max-width: 640px) {
+  .site-header .inner {
+    position: relative;
+    min-height: 3.75rem;
+    padding: 0.35rem 0;
+    gap: 0.75rem;
+  }
+
+  .nav-menu {
+    display: block;
+    position: relative;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.45rem);
+    right: 0;
+    z-index: 12;
+    min-width: min(17.5rem, calc(100vw - 2rem));
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.15rem;
+    padding: 0.4rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: rgba(16, 21, 27, 0.97);
+    box-shadow: var(--shadow);
+  }
+
+  .nav-menu[open] + .nav {
+    display: flex;
+  }
+
+  .nav a {
+    display: flex;
+    align-items: center;
+    min-height: 2.75rem;
+    padding: 0 0.85rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  .nav a:hover,
+  .nav a:focus-visible {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .hero {
+    padding: 1.75rem 0 1.1rem;
+  }
+
+  .hero h1 {
+    max-width: none;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.7rem;
+    margin-top: 1.25rem;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    min-height: 2.75rem;
+  }
+
+  .trust {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    margin: 1.15rem 0 0;
+  }
+
+  .note {
+    margin: 0 0 1.85rem;
+  }
 }
