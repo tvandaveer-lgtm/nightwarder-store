@@ -1,6 +1,6 @@
 # NightWarder store — 2026-09-05
 
-**Status:** live sample screenshots. Catalog date 2026-09-05. Audience widened beyond volunteer FD to fire / EMS, safety departments, and facility / industrial EM.
+**Status:** live sample screenshots. Catalog date 2026-09-05. Count is 21. Voice: volunteer / small-department fire / EMS first.
 
 **Live URL:** https://nightwarder.com/
 
@@ -21,9 +21,9 @@ BUNDLE-01 (TR+AAR+HEAT, $49) is a leftover mix listed last under Admin. It is no
 
 **Checkout:** existing live Stripe Payment Links only. Do not invent, rotate, or recreate buy URLs. Do not change prices.
 
-**Fulfillment / support:** file by email after payment from `nightwarder@agentmail.to` only. Not an instant download.
+**Fulfillment / support:** File by email after Stripe checkout from `nightwarder@agentmail.to` only. Not an instant download. Published refund line: Digital delivery · contact nightwarder@ within 7 days of purchase for refund requests.
 
-**Audience copy:** fire / EMS, safety departments, and facility / industrial EM. Keep the firehouse niche; do not write as if OSHA is the product.
+**Audience copy:** volunteer and small-department fire / EMS first. Keep the firehouse niche. Do not write facility EM / house-or-site drift. Do not write as if OSHA is the product.
 
 **Disclaimer (on page):** blank templates for the department to adopt. Not completed reports, not legal advice, and not an audit. Heat and cold weather SOPs are templates only — not OSHA law. Permits are blank templates — not completed authorizations, not AHJ approval, and not OSHA law. PTW card: blank work-authorization cover template; not OSHA law; not a completed authorization; not AHJ approval; does not replace hot work / CSE permits. LOTO card: blank authorization + isolation checklist + device log; not OSHA law; not a completed lockout; not a written energy-control program.
 
@@ -140,7 +140,7 @@ Catalog card ids: `#ppe-scba`, `#rope`, `#turnout`, `#scba-cyl`, `#ladder`, `#ex
 
 - Public storefront prefers nightwarder.com. Avoid personal-name leakage in public copy and asset paths.
 - Samples are sterile EXAMPLE / Station 99 / 2099 demo screenshots of the live kits.
-- Audience copy (title, meta, eyebrow, footer) covers fire / EMS, safety departments, and facility / industrial EM — not volunteer FD only.
+- Audience copy (title, meta, eyebrow, footer) leads with volunteer and small-department fire / EMS. Do not write facility EM / house-or-site drift.
 - Catalog date 2026-09-05. Count is 21.
 - LOTO Buy is live: https://buy.stripe.com/dRmfZietq3AsfTC7Pp1Jm0f. Do not rotate or recreate it.
 - ROPE Buy is live: https://buy.stripe.com/5kQcN6852gneazi2v51Jm0g. Do not rotate or recreate it.
