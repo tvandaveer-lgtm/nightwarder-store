@@ -193,7 +193,7 @@ a { color: inherit; }
   font-size: clamp(2.1rem, 5vw, 3.35rem);
   line-height: 1.12;
   letter-spacing: -0.03em;
-  max-width: 16ch;
+  max-width: 20ch;
 }
 
 .lede {

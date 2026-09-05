@@ -601,6 +601,54 @@ PAGES["permit-to-work"] = (
 """,
 )
 
+PAGES["lockout-tagout-pack"] = (
+    "doc",
+    1200,
+    1550,
+    f"""
+<p class="meta">NightWarder | SKU-NW-LOTO-01 | Blank template</p>
+<p class="ver">Ver. 2026-09-05</p>
+{badge()}
+<hr class="rule"/>
+<h1>Lockout / Tagout authorization</h1>
+<p class="sub">Blank pack: authorization + isolation checklist + device log. Not a completed lockout. Not a written energy-control program. Not OSHA law.</p>
+<table>
+  <tr><td class="l">Equipment / energy source (buyer names)</td><td class="g" style="height:28px"></td></tr>
+  <tr><td class="l">Location / site</td><td class="g" style="height:28px"></td></tr>
+  <tr><td class="l">Work window (start / expected end)</td><td class="g" style="height:28px"></td></tr>
+  <tr><td class="l">Authorized employee (printed name)</td><td class="g" style="height:28px"></td></tr>
+</table>
+<h1>Isolation checklist</h1>
+<p class="sub">Label-only rows. Gold blanks until the buyer fills them from the real job. Do not invent isolation steps.</p>
+<table>
+  <tr><th>Step (label only — buyer completes)</th><th style="width:14%">Y / N / NA</th><th style="width:28%">Notes / initials</th></tr>
+  <tr><td class="l">Notify affected people</td><td></td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Shut down equipment</td><td></td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Isolate energy source(s)</td><td></td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Apply lock / tag devices</td><td></td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Verify zero energy (try-out)</td><td></td><td class="g" style="height:26px"></td></tr>
+</table>
+<h1>Device log</h1>
+<p class="sub">Empty rows. Record devices actually applied. A blank log is not a lockout.</p>
+<table>
+  <tr><th style="width:8%">#</th><th>Device ID / type</th><th>Energy type</th><th>Location on equipment</th><th style="width:16%">Applied by</th></tr>
+  <tr><td>1</td><td class="g" style="height:26px"></td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td>2</td><td class="g" style="height:26px"></td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td>3</td><td class="g" style="height:26px"></td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td>4</td><td class="g" style="height:26px"></td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
+</table>
+<h1>Authorization signatures</h1>
+<p class="sub">Gold blanks. A blank signature means this is still a template — not a completed lockout.</p>
+<table class="goldframe">
+  <tr><th style="width:26%">Role</th><th>Printed name</th><th>Signature</th><th style="width:16%">Date</th></tr>
+  <tr><td class="l">Authorized employee</td><td class="g" style="height:28px"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="l">Area / officer authority</td><td class="g" style="height:28px"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="l">Other (title):</td><td class="g" style="height:28px"></td><td class="g"></td><td class="g"></td></tr>
+</table>
+<div class="goldbox">NOT A COMPLETED LOCKOUT. Unsigned gold rows mean energy is not controlled on this form. Not a written energy-control program. Not OSHA law. Not AHJ approval.</div>
+""",
+)
+
 
 def chrome_shot(html_path: Path, png_path: Path, w: int, h: int) -> None:
     png_path.parent.mkdir(parents=True, exist_ok=True)
