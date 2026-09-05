@@ -34,7 +34,7 @@
 | Confined space entry permit | `assets/thumbs/confined-space-entry-permit.png` |
 | Permit-to-work | `assets/thumbs/permit-to-work.png` |
 
-Also: lantern brand mark (`assets/logo.png` header 256, `assets/logo-512.png`, `assets/favicon-32.png`, `assets/favicon-16.png`, `assets/apple-touch-icon.png`, root `favicon.ico`). Legacy `assets/mark.svg` unused. `assets/store.css`. Sample pages: `scripts/sample-pages/`. Rebuild: `scripts/generate_samples.py`.
+Also: lantern brand mark (`assets/logo.png` header 256, `assets/logo-512.png`, `assets/favicon-32.png`, `assets/favicon-16.png`, `assets/apple-touch-icon.png`, root `favicon.ico`). Legacy `assets/mark.svg` unused. `assets/store.css`. Sample pages: `scripts/sample-pages/`. Rebuild: `scripts/generate_samples.py`. Guide pages: `guides/`.
 
 Hot work card copy is finished buyer language (“for your department”). Do not leave `[Department]` tokens on live buy cards. Kit gold fields may still use fillable department blanks.
 
@@ -74,6 +74,21 @@ Hot work card copy is finished buyer language (“for your department”). Do no
 | Hot work permit | $19 | https://buy.stripe.com/eVq3cwbhe8UMfTC7Pp1Jm0c |
 | Confined space entry permit | $24 | https://buy.stripe.com/aFadRadpmc6Y6j2d9J1Jm0d |
 | Permit-to-work | $19 | https://buy.stripe.com/dRm5kE3OM5IAgXGfhR1Jm0e |
+
+## Guides (P0 SEO long-tail)
+
+Blank template pages. Shared disclaimer on each: not legal advice; not a completed report or authorization; not OSHA law; not AHJ approval; not an audit. No new Stripe Payment Links. CTA is the catalog (`index.html`, https://nightwarder.com/, or https://tvandaveer-lgtm.github.io/nightwarder-store/) unless a live buy URL already exists on `index.html`.
+
+| Page | Path | CTA |
+|---|---|---|
+| Guides index | `guides/index.html` | Catalog |
+| Life-safety rope log | `guides/volunteer-fd-life-safety-rope-inspection-log.html` | Catalog (ROPE buy not live) |
+| Turnout advanced cleaning log | `guides/turnout-gear-advanced-cleaning-log.html` | Catalog (TURN buy not live) + PPE card |
+| SCBA cylinder due dates | `guides/scba-cylinder-hydrostatic-due-spreadsheet.html` | Catalog (CYL buy not live) + PPE card |
+| PPE / SCBA tracker | `guides/volunteer-fd-ppe-scba-tracker.html` | Catalog `#ppe-scba` + live PPE buy URL |
+| Confined space entry | `guides/volunteer-fd-confined-space-entry-permit.html` | Catalog `#confined-space` + live CSE buy URL |
+
+Catalog cards that guides deep-link: `#ppe-scba`, `#confined-space`, `#hot-work`, `#permit-to-work`.
 
 ## Notes
 
