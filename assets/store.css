@@ -193,7 +193,7 @@ a { color: inherit; }
   font-size: clamp(2.1rem, 5vw, 3.35rem);
   line-height: 1.12;
   letter-spacing: -0.03em;
-  max-width: 16ch;
+  max-width: 20ch;
 }
 
 .lede {
@@ -342,21 +342,6 @@ a { color: inherit; }
   aspect-ratio: 16 / 10;
   object-fit: cover;
   object-position: top center;
-}
-
-.thumb-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 16 / 10;
-}
-
-.thumb-placeholder-text {
-  font-size: 0.78rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-weight: 650;
-  color: var(--muted);
 }
 
 .thumb-label {

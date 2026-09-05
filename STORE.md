@@ -10,9 +10,11 @@
 
 **Fulfillment / support:** file by email after payment from `nightwarder@agentmail.to` only. Not an instant download.
 
-**Disclaimer (on page):** blank templates for the department to adopt. Not completed reports, not legal advice, and not an audit. Heat and cold weather SOPs are templates only — not OSHA law. Permits are blank templates — not completed authorizations, not AHJ approval, and not OSHA law. PTW card: blank work-authorization cover template; not OSHA law; not a completed authorization; not AHJ approval; does not replace hot work / CSE permits. LOTO card: blank LOTO / lockout-tagout pack for your department; not OSHA law; not a completed energy-control procedure.
+**Audience copy:** fire / EMS, safety departments, and facility / industrial EM. Keep the firehouse niche; do not write as if OSHA is the product.
 
-**Thumbnails:** EXAMPLE / Station 99 demo screenshots of the live kits (fake 2099 figures). Not abstract kit-cover art. Catalog cards use the PNG samples; click opens a lightbox. LOTO has no sample PNG yet — storefront uses a text placeholder thumb (not EXAMPLE Station 99).
+**Disclaimer (on page):** blank templates for the department to adopt. Not completed reports, not legal advice, and not an audit. Heat and cold weather SOPs are templates only — not OSHA law. Permits are blank templates — not completed authorizations, not AHJ approval, and not OSHA law. PTW card: blank work-authorization cover template; not OSHA law; not a completed authorization; not AHJ approval; does not replace hot work / CSE permits. LOTO card: blank authorization + isolation checklist + device log; not OSHA law; not a completed lockout; not a written energy-control program.
+
+**Thumbnails:** EXAMPLE / Station 99 demo screenshots of the live kits (fake 2099 figures). Not abstract kit-cover art. Catalog cards use the PNG samples; click opens a lightbox.
 
 ## Asset map (SKU → screenshot)
 
@@ -33,7 +35,7 @@
 | Hot work permit | `assets/thumbs/hot-work-permit.png` |
 | Confined space entry permit | `assets/thumbs/confined-space-entry-permit.png` |
 | Permit-to-work | `assets/thumbs/permit-to-work.png` |
-| SKU-NW-LOTO-01 Lockout-Tagout pack | none (text placeholder; sample pending) |
+| SKU-NW-LOTO-01 Lockout-Tagout pack | `assets/thumbs/lockout-tagout-pack.png` |
 
 Also: lantern brand mark (`assets/logo.png` header 256, `assets/logo-512.png`, `assets/favicon-32.png`, `assets/favicon-16.png`, `assets/apple-touch-icon.png`, root `favicon.ico`). Legacy `assets/mark.svg` unused. `assets/store.css`. Sample pages: `scripts/sample-pages/`. Rebuild: `scripts/generate_samples.py`.
 
