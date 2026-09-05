@@ -344,6 +344,10 @@ a { color: inherit; }
   object-position: top center;
 }
 
+.thumb-blank {
+  aspect-ratio: 16 / 10;
+}
+
 .thumb-label {
   position: absolute;
   left: 0.7rem;

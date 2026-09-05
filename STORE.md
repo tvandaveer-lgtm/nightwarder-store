@@ -36,12 +36,15 @@
 | Confined space entry permit | `assets/thumbs/confined-space-entry-permit.png` |
 | Permit-to-work | `assets/thumbs/permit-to-work.png` |
 | SKU-NW-LOTO-01 Lockout-Tagout pack | `assets/thumbs/lockout-tagout-pack.png` |
+| SKU-NW-ROPE-01 Life-safety rope log | Text card (no Station 99 sample PNG yet) |
+| SKU-NW-TURN-01 Turnout advanced inspect + clean log | Text card (no Station 99 sample PNG yet) |
+| SKU-NW-CYL-01 SCBA cylinder due calendar | Text card (no Station 99 sample PNG yet) |
 
 Also: lantern brand mark (`assets/logo.png` header 256, `assets/logo-512.png`, `assets/favicon-32.png`, `assets/favicon-16.png`, `assets/apple-touch-icon.png`, root `favicon.ico`). Legacy `assets/mark.svg` unused. `assets/store.css`. Sample pages: `scripts/sample-pages/`. Rebuild: `scripts/generate_samples.py`. SEO guide pages: `seo/`.
 
 Hot work card copy is finished buyer language (“for your department”). Do not leave `[Department]` tokens on live buy cards. Kit gold fields may still use fillable department blanks.
 
-## Catalog (16) — buy URLs frozen
+## Catalog (19) — buy URLs frozen
 
 ### Core
 
@@ -61,6 +64,9 @@ Hot work card copy is finished buyer language (“for your department”). Do no
 | Apparatus inspection log | $19 | https://buy.stripe.com/9B6cN61GE4Ew0YI8Tt1Jm06 |
 | PPE / SCBA tracker | $19 | https://buy.stripe.com/3cI4gAcli2wobDmc5F1Jm07 |
 | Donation register | $19 | https://buy.stripe.com/cNi8wQfxu6ME22MedN1Jm08 |
+| SKU-NW-ROPE-01 Life-safety rope log | $19 | https://buy.stripe.com/5kQcN6852gneazi2v51Jm0g |
+| SKU-NW-TURN-01 Turnout advanced inspect + clean log | $19 | https://buy.stripe.com/aFa8wQ8521sk7n6glV1Jm0i |
+| SKU-NW-CYL-01 SCBA cylinder due calendar | $19 | https://buy.stripe.com/cNi3cw2KI0ogfTCfhR1Jm0h |
 
 ### Word kits
 
@@ -81,7 +87,7 @@ Hot work card copy is finished buyer language (“for your department”). Do no
 
 ## Guides (`/seo/` aisle map)
 
-Aisle map matches the store: Core / Ops / Word / Safety. Shared disclaimer on each page: Blank template for [Department] to adopt and fill. Not legal advice. Not a completed report or authorization. Not OSHA law. Not AHJ approval. Not an audit. No new Stripe Payment Links. No Gumroad. ROPE / TURN / CYL stay catalog-only (`#ops`) — no buy.stripe on those three.
+Aisle map matches the store: Core / Ops / Word / Safety. Shared disclaimer on each page: Blank template for [Department] to adopt and fill. Not legal advice. Not a completed report or authorization. Not OSHA law. Not AHJ approval. Not an audit. No new Stripe Payment Links. No Gumroad. ROPE / TURN / CYL Buy CTAs use the frozen catalog links below.
 
 | Aisle | Page | Path | CTA |
 |---|---|---|---|
@@ -94,9 +100,9 @@ Aisle map matches the store: Core / Ops / Word / Safety. Shared disclaimer on ea
 | Ops | Apparatus inspection log | `seo/volunteer-fd-apparatus-inspection-log.html` | Live APP buy + `#ops` |
 | Ops | PPE / SCBA tracker | `seo/volunteer-fd-ppe-scba-tracker.html` | Live PPE buy + `#ppe-scba` / `#ops` |
 | Ops | Donation register | `seo/volunteer-fd-donation-register.html` | Live DON buy + `#ops` |
-| Ops | Life-safety rope log | `seo/volunteer-fd-life-safety-rope-inspection-log.html` | Catalog `#ops` only (HOLD) |
-| Ops | Turnout advanced cleaning log | `seo/turnout-gear-advanced-cleaning-log.html` | Catalog `#ops` only (HOLD) |
-| Ops | SCBA cylinder due dates | `seo/scba-cylinder-hydro-due-date-spreadsheet.html` | Catalog `#ops` only (HOLD) |
+| Ops | Life-safety rope log | `seo/volunteer-fd-life-safety-rope-inspection-log.html` | Live ROPE buy + `#rope` / `#ops` |
+| Ops | Turnout advanced cleaning log | `seo/turnout-gear-advanced-cleaning-log.html` | Live TURN buy + `#turnout` / `#ops` |
+| Ops | SCBA cylinder due dates | `seo/scba-cylinder-hydro-due-date-spreadsheet.html` | Live CYL buy + `#scba-cyl` / `#ops` |
 | Word | Exposure / near-miss log | `seo/firefighter-exposure-near-miss-log.html` | Live EXP buy + `#word` |
 | Word | Cold weather SOP | `seo/firefighter-cold-weather-sop-blank.html` | Live COLD buy + `#word` |
 | Word | Member meeting packet | `seo/volunteer-fd-meeting-agenda-minutes.html` | Live MTG buy + `#word` |
@@ -107,12 +113,15 @@ Aisle map matches the store: Core / Ops / Word / Safety. Shared disclaimer on ea
 
 Live buy URLs stay the frozen catalog links in the table above this section. Do not rotate or recreate them.
 
-Catalog card ids: `#ppe-scba`, `#confined-space`, `#hot-work`, `#permit-to-work`, `#loto`.
+Catalog card ids: `#ppe-scba`, `#rope`, `#turnout`, `#scba-cyl`, `#confined-space`, `#hot-work`, `#permit-to-work`, `#loto`.
 
 ## Notes
 
 - Public storefront prefers nightwarder.com. Avoid personal-name leakage in public copy and asset paths.
 - Samples are sterile EXAMPLE / Station 99 / 2099 demo screenshots of the live kits.
 - Audience copy (title, meta, eyebrow, footer) covers fire / EMS, safety departments, and facility / industrial EM — not volunteer FD only.
-- Catalog date 2026-09-05. Count is 16.
+- Catalog date 2026-09-05. Count is 19.
 - LOTO Buy is live: https://buy.stripe.com/dRmfZietq3AsfTC7Pp1Jm0f. Do not rotate or recreate it.
+- ROPE Buy is live: https://buy.stripe.com/5kQcN6852gneazi2v51Jm0g. Do not rotate or recreate it.
+- TURN Buy is live: https://buy.stripe.com/aFa8wQ8521sk7n6glV1Jm0i. Do not rotate or recreate it.
+- CYL Buy is live: https://buy.stripe.com/cNi3cw2KI0ogfTCfhR1Jm0h. Do not rotate or recreate it.
