@@ -414,7 +414,10 @@ a.buy:focus-visible,
 .btn:focus-visible,
 .nav a:focus-visible,
 .nav-toggle:focus-visible,
-.brand:focus-visible {
+.brand:focus-visible,
+.crumb a:focus-visible,
+.related a:focus-visible,
+.guide-body a:focus-visible {
   outline: 2px solid #f0c09a;
   outline-offset: 2px;
 }
@@ -562,8 +565,172 @@ a.buy:focus-visible,
 }
 .lightbox-close:hover { color: var(--text); }
 
+.crumb {
+  margin: 0 0 0.85rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.crumb a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.crumb a:hover,
+.crumb a:focus-visible {
+  color: var(--text);
+}
+
+.guide-hero .hero-grid {
+  grid-template-columns: 1fr;
+}
+
+.guide-hero h1 {
+  max-width: 24ch;
+}
+
+.guide-body {
+  max-width: 42rem;
+  padding-bottom: 0.5rem;
+}
+
+.guide-body h2 {
+  margin: 2rem 0 0.55rem;
+  font-family: var(--serif);
+  font-size: 1.45rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.guide-body p {
+  margin: 0 0 0.85rem;
+  color: var(--muted);
+}
+
+.guide-body p strong {
+  color: var(--text);
+  font-weight: 650;
+}
+
+.guide-body ul {
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+.guide-body li {
+  margin: 0.28rem 0;
+}
+
+.guide-body a {
+  color: var(--text);
+  text-underline-offset: 0.15em;
+}
+
+.guide-body a:hover {
+  color: var(--accent);
+}
+
+.aeo {
+  margin: 0 0 1.6rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid rgba(212, 101, 42, 0.28);
+  background: var(--accent-dim);
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 1.02rem;
+}
+
+.aeo-label {
+  display: block;
+  margin: 0 0 0.35rem;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.aeo p {
+  margin: 0;
+  color: var(--text);
+}
+
+.sample-line {
+  margin: 0 0 1rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.sample-line strong {
+  color: var(--text);
+}
+
+.related {
+  margin: 2.2rem 0 0;
+  padding: 1.1rem 1.15rem 1.2rem;
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: var(--radius);
+}
+
+.related h2 {
+  margin: 0 0 0.45rem;
+}
+
+.related ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.related li {
+  margin: 0;
+}
+
+.related a {
+  display: block;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.related li:last-child a {
+  border-bottom: 0;
+}
+
+.related a:hover,
+.related a:focus-visible {
+  color: var(--accent);
+}
+
+.guide-index {
+  padding-bottom: 2.4rem;
+}
+
+.guide-index .card-body {
+  gap: 0.55rem;
+}
+
+.guide-index .card {
+  text-decoration: none;
+}
+
+a.card.guide-card {
+  color: inherit;
+}
+
+a.card.guide-card:hover .name {
+  color: var(--accent);
+}
+
 @media (min-width: 700px) {
   .hero-grid { grid-template-columns: 1.4fr 0.8fr; }
+  .guide-hero .hero-grid { grid-template-columns: 1fr; }
   .grid { grid-template-columns: 1fr 1fr; }
   .card.featured {
     grid-template-columns: 1fr;

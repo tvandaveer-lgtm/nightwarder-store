@@ -37,7 +37,7 @@
 | Permit-to-work | `assets/thumbs/permit-to-work.png` |
 | SKU-NW-LOTO-01 Lockout-Tagout pack | `assets/thumbs/lockout-tagout-pack.png` |
 
-Also: lantern brand mark (`assets/logo.png` header 256, `assets/logo-512.png`, `assets/favicon-32.png`, `assets/favicon-16.png`, `assets/apple-touch-icon.png`, root `favicon.ico`). Legacy `assets/mark.svg` unused. `assets/store.css`. Sample pages: `scripts/sample-pages/`. Rebuild: `scripts/generate_samples.py`.
+Also: lantern brand mark (`assets/logo.png` header 256, `assets/logo-512.png`, `assets/favicon-32.png`, `assets/favicon-16.png`, `assets/apple-touch-icon.png`, root `favicon.ico`). Legacy `assets/mark.svg` unused. `assets/store.css`. Sample pages: `scripts/sample-pages/`. Rebuild: `scripts/generate_samples.py`. SEO guide pages: `seo/`.
 
 Hot work card copy is finished buyer language (“for your department”). Do not leave `[Department]` tokens on live buy cards. Kit gold fields may still use fillable department blanks.
 
@@ -78,6 +78,23 @@ Hot work card copy is finished buyer language (“for your department”). Do no
 | Confined space entry permit | $24 | https://buy.stripe.com/aFadRadpmc6Y6j2d9J1Jm0d |
 | Permit-to-work | $19 | https://buy.stripe.com/dRm5kE3OM5IAgXGfhR1Jm0e |
 | SKU-NW-LOTO-01 Lockout-Tagout pack | $19 | https://buy.stripe.com/dRmfZietq3AsfTC7Pp1Jm0f |
+
+## Guides (P0 SEO long-tail · REV1)
+
+River BRIEF REV1 §5. Shared disclaimer on each: Blank template for your department to adopt and fill. Not legal advice. Not a completed report or authorization. Not OSHA law. Not AHJ approval. Not an audit. No new Stripe Payment Links.
+
+| Page | Path | CTA |
+|---|---|---|
+| Guides index | `seo/index.html` | Catalog `#catalog` |
+| Life-safety rope log | `seo/volunteer-fd-life-safety-rope-inspection-log.html` | Catalog `#ops` / `#catalog` (ROPE buy not live) |
+| Turnout advanced cleaning log | `seo/turnout-gear-advanced-cleaning-log.html` | Catalog `#ops` + live PPE buy URL |
+| SCBA cylinder due dates | `seo/scba-cylinder-hydro-due-date-spreadsheet.html` | Catalog `#ops` + live PPE buy URL |
+| PPE / SCBA tracker | `seo/volunteer-fd-ppe-scba-tracker.html` | Live PPE buy URL + catalog `#ppe-scba` / `#ops` |
+| Confined space entry | `seo/volunteer-fd-confined-space-entry-permit.html` | Live CSE buy URL + catalog `#confined-space` / `#permits` |
+
+Live buy URLs (already on `index.html`): PPE `https://buy.stripe.com/3cI4gAcli2wobDmc5F1Jm07` · CSE `https://buy.stripe.com/aFadRadpmc6Y6j2d9J1Jm0d`.
+
+Catalog card ids: `#ppe-scba`, `#confined-space`, `#hot-work`, `#permit-to-work`.
 
 ## Notes
 
