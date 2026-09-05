@@ -41,7 +41,7 @@ Also: lantern brand mark (`assets/logo.png` header 256, `assets/logo-512.png`, `
 
 Hot work card copy is finished buyer language (“for your department”). Do not leave `[Department]` tokens on live buy cards. Kit gold fields may still use fillable department blanks.
 
-## Catalog (16) — buy URLs frozen except LOTO (pending)
+## Catalog (16) — buy URLs frozen
 
 ### Core
 
@@ -77,11 +77,10 @@ Hot work card copy is finished buyer language (“for your department”). Do no
 | Hot work permit | $19 | https://buy.stripe.com/eVq3cwbhe8UMfTC7Pp1Jm0c |
 | Confined space entry permit | $24 | https://buy.stripe.com/aFadRadpmc6Y6j2d9J1Jm0d |
 | Permit-to-work | $19 | https://buy.stripe.com/dRm5kE3OM5IAgXGfhR1Jm0e |
-| Lockout-Tagout pack | $19 | `#loto-pending` until live Payment Link — HTML comment `<!-- LOTO_BUY_URL -->` |
+| Lockout-Tagout pack | $19 | https://buy.stripe.com/dRmfZietq3AsfTC7Pp1Jm0f |
 
 ## Notes
 
 - Public storefront prefers nightwarder.com. Avoid personal-name leakage in public copy and asset paths.
 - Samples are sterile EXAMPLE / Station 99 / 2099 demo screenshots of the live kits.
 - Catalog date 2026-09-05.
-- LOTO buy href is a disabled placeholder (`#loto-pending`). Replace `<!-- LOTO_BUY_URL -->` after Book CLEAR. Do not invent a live Stripe URL.

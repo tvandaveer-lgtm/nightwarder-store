@@ -410,16 +410,6 @@ a.buy {
 }
 
 a.buy:hover { filter: brightness(1.08); }
-
-a.buy.disabled,
-a.buy[aria-disabled="true"] {
-  background: #3a4450;
-  color: #c5ccd4;
-  filter: none;
-  pointer-events: none;
-  cursor: not-allowed;
-  opacity: 0.72;
-}
 a.buy:focus-visible,
 .btn:focus-visible,
 .nav a:focus-visible,
