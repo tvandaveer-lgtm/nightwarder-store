@@ -1,6 +1,6 @@
-# NightWarder store — 2026-09-04
+# NightWarder store — 2026-09-05
 
-**Status:** live sample screenshots. Catalog date 2026-09-04.
+**Status:** live sample screenshots. Catalog date 2026-09-05.
 
 **Live URL:** https://nightwarder.com/
 
@@ -10,7 +10,9 @@
 
 **Fulfillment / support:** file by email after payment from `nightwarder@agentmail.to` only. Not an instant download.
 
-**Disclaimer (on page):** blank templates for the department to adopt. Not completed reports, not legal advice, and not an audit. Heat and cold weather SOPs are templates only — not OSHA law. Permits are blank templates — not completed authorizations, not AHJ approval, and not OSHA law. PTW card: blank work-authorization cover template; not OSHA law; not a completed authorization; not AHJ approval; does not replace hot work / CSE permits.
+**Audience copy:** volunteer, small-department, **and** safety-team / facility paperwork. Keep the firehouse niche; do not write as if OSHA is the product.
+
+**Disclaimer (on page):** blank templates for the department to adopt. Not completed reports, not legal advice, and not an audit. Heat and cold weather SOPs are templates only — not OSHA law. Permits are blank templates — not completed authorizations, not AHJ approval, and not OSHA law. PTW card: blank work-authorization cover template; not OSHA law; not a completed authorization; not AHJ approval; does not replace hot work / CSE permits. LOTO card: blank authorization + isolation checklist + device log; not OSHA law; not a completed lockout; not a written energy-control program.
 
 **Thumbnails:** EXAMPLE / Station 99 demo screenshots of the live kits (fake 2099 figures). Not abstract kit-cover art. Catalog cards use the PNG samples; click opens a lightbox.
 
@@ -33,12 +35,13 @@
 | Hot work permit | `assets/thumbs/hot-work-permit.png` |
 | Confined space entry permit | `assets/thumbs/confined-space-entry-permit.png` |
 | Permit-to-work | `assets/thumbs/permit-to-work.png` |
+| Lockout-Tagout pack | `assets/thumbs/lockout-tagout-pack.png` |
 
 Also: lantern brand mark (`assets/logo.png` header 256, `assets/logo-512.png`, `assets/favicon-32.png`, `assets/favicon-16.png`, `assets/apple-touch-icon.png`, root `favicon.ico`). Legacy `assets/mark.svg` unused. `assets/store.css`. Sample pages: `scripts/sample-pages/`. Rebuild: `scripts/generate_samples.py`.
 
 Hot work card copy is finished buyer language (“for your department”). Do not leave `[Department]` tokens on live buy cards. Kit gold fields may still use fillable department blanks.
 
-## Catalog (15) — buy URLs frozen
+## Catalog (16) — buy URLs frozen except LOTO (pending)
 
 ### Core
 
@@ -74,9 +77,11 @@ Hot work card copy is finished buyer language (“for your department”). Do no
 | Hot work permit | $19 | https://buy.stripe.com/eVq3cwbhe8UMfTC7Pp1Jm0c |
 | Confined space entry permit | $24 | https://buy.stripe.com/aFadRadpmc6Y6j2d9J1Jm0d |
 | Permit-to-work | $19 | https://buy.stripe.com/dRm5kE3OM5IAgXGfhR1Jm0e |
+| Lockout-Tagout pack | $19 | `#loto-pending` until live Payment Link — HTML comment `<!-- LOTO_BUY_URL -->` |
 
 ## Notes
 
 - Public storefront prefers nightwarder.com. Avoid personal-name leakage in public copy and asset paths.
 - Samples are sterile EXAMPLE / Station 99 / 2099 demo screenshots of the live kits.
-- Catalog date 2026-09-04.
+- Catalog date 2026-09-05.
+- LOTO buy href is a disabled placeholder (`#loto-pending`). Replace `<!-- LOTO_BUY_URL -->` after Book CLEAR. Do not invent a live Stripe URL.
