@@ -1,18 +1,18 @@
-# NightWarder store — 2026-09-04
+# NightWarder store — 2026-09-05
 
-**Status:** live sample screenshots. Catalog date 2026-09-04.
+**Status:** live sample screenshots. Catalog date 2026-09-05. Audience widened beyond volunteer FD to fire / EMS, safety departments, and facility / industrial EM.
 
 **Live URL:** https://nightwarder.com/
 
 **Repo:** GitHub Pages on `nightwarder-store` (`index.html` + `assets/`). CNAME remains `nightwarder.com`.
 
-**Checkout:** existing live Stripe Payment Links only. Do not invent, rotate, or recreate buy URLs. Do not change prices.
+**Checkout:** existing live Stripe Payment Links only. Do not invent, rotate, or recreate buy URLs. Do not change prices. Exception: SKU-NW-LOTO-01 Buy href is `#loto-pending` (HOLD / pending CLEAR). Do not create a Stripe Payment Link for LOTO until Book CLEAR.
 
 **Fulfillment / support:** file by email after payment from `nightwarder@agentmail.to` only. Not an instant download.
 
-**Disclaimer (on page):** blank templates for the department to adopt. Not completed reports, not legal advice, and not an audit. Heat and cold weather SOPs are templates only — not OSHA law. Permits are blank templates — not completed authorizations, not AHJ approval, and not OSHA law. PTW card: blank work-authorization cover template; not OSHA law; not a completed authorization; not AHJ approval; does not replace hot work / CSE permits.
+**Disclaimer (on page):** blank templates for the department to adopt. Not completed reports, not legal advice, and not an audit. Heat and cold weather SOPs are templates only — not OSHA law. Permits are blank templates — not completed authorizations, not AHJ approval, and not OSHA law. PTW card: blank work-authorization cover template; not OSHA law; not a completed authorization; not AHJ approval; does not replace hot work / CSE permits. LOTO card: blank LOTO / lockout-tagout pack for your department; not OSHA law; not a completed energy-control procedure.
 
-**Thumbnails:** EXAMPLE / Station 99 demo screenshots of the live kits (fake 2099 figures). Not abstract kit-cover art. Catalog cards use the PNG samples; click opens a lightbox.
+**Thumbnails:** EXAMPLE / Station 99 demo screenshots of the live kits (fake 2099 figures). Not abstract kit-cover art. Catalog cards use the PNG samples; click opens a lightbox. LOTO has no sample PNG yet — storefront uses a text placeholder thumb (not EXAMPLE Station 99).
 
 ## Asset map (SKU → screenshot)
 
@@ -33,12 +33,13 @@
 | Hot work permit | `assets/thumbs/hot-work-permit.png` |
 | Confined space entry permit | `assets/thumbs/confined-space-entry-permit.png` |
 | Permit-to-work | `assets/thumbs/permit-to-work.png` |
+| SKU-NW-LOTO-01 Lockout-Tagout pack | none (text placeholder; sample pending) |
 
 Also: lantern brand mark (`assets/logo.png` header 256, `assets/logo-512.png`, `assets/favicon-32.png`, `assets/favicon-16.png`, `assets/apple-touch-icon.png`, root `favicon.ico`). Legacy `assets/mark.svg` unused. `assets/store.css`. Sample pages: `scripts/sample-pages/`. Rebuild: `scripts/generate_samples.py`.
 
 Hot work card copy is finished buyer language (“for your department”). Do not leave `[Department]` tokens on live buy cards. Kit gold fields may still use fillable department blanks.
 
-## Catalog (15) — buy URLs frozen
+## Catalog (16) — buy URLs frozen except LOTO HOLD
 
 ### Core
 
@@ -67,16 +68,19 @@ Hot work card copy is finished buyer language (“for your department”). Do no
 | Cold weather SOP | $19 | https://buy.stripe.com/cNi7sM8524EwgXGfhR1Jm0b |
 | Member meeting packet | $19 | https://buy.stripe.com/3cI3cw0CA9YQ22M9Xx1Jm0a |
 
-### Safety permits (Safety Pack A)
+### Safety aisle (Safety Pack A + LOTO)
 
 | Product | Price | Buy |
 |---|---|---|
 | Hot work permit | $19 | https://buy.stripe.com/eVq3cwbhe8UMfTC7Pp1Jm0c |
 | Confined space entry permit | $24 | https://buy.stripe.com/aFadRadpmc6Y6j2d9J1Jm0d |
 | Permit-to-work | $19 | https://buy.stripe.com/dRm5kE3OM5IAgXGfhR1Jm0e |
+| SKU-NW-LOTO-01 Lockout-Tagout pack | $19 | HOLD / pending CLEAR (`#loto-pending`) |
 
 ## Notes
 
 - Public storefront prefers nightwarder.com. Avoid personal-name leakage in public copy and asset paths.
 - Samples are sterile EXAMPLE / Station 99 / 2099 demo screenshots of the live kits.
-- Catalog date 2026-09-04.
+- Audience copy (title, meta, eyebrow, footer) covers fire / EMS, safety departments, and facility / industrial EM — not volunteer FD only.
+- Catalog date 2026-09-05. Count is 16.
+- LOTO Buy stays a placeholder until Book CLEAR. Do not add a buy.stripe.com URL for SKU-NW-LOTO-01.

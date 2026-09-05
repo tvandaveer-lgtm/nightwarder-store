@@ -344,6 +344,21 @@ a { color: inherit; }
   object-position: top center;
 }
 
+.thumb-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 10;
+}
+
+.thumb-placeholder-text {
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 650;
+  color: var(--muted);
+}
+
 .thumb-label {
   position: absolute;
   left: 0.7rem;
