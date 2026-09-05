@@ -1,6 +1,6 @@
 # NightWarder store — 2026-09-05
 
-**Status:** live sample screenshots. Catalog date 2026-09-05.
+**Status:** live sample screenshots. Catalog date 2026-09-05. Audience widened beyond volunteer FD to fire / EMS, safety departments, and facility / industrial EM.
 
 **Live URL:** https://nightwarder.com/
 
@@ -10,7 +10,7 @@
 
 **Fulfillment / support:** file by email after payment from `nightwarder@agentmail.to` only. Not an instant download.
 
-**Audience copy:** volunteer, small-department, **and** safety-team / facility paperwork. Keep the firehouse niche; do not write as if OSHA is the product.
+**Audience copy:** fire / EMS, safety departments, and facility / industrial EM. Keep the firehouse niche; do not write as if OSHA is the product.
 
 **Disclaimer (on page):** blank templates for the department to adopt. Not completed reports, not legal advice, and not an audit. Heat and cold weather SOPs are templates only — not OSHA law. Permits are blank templates — not completed authorizations, not AHJ approval, and not OSHA law. PTW card: blank work-authorization cover template; not OSHA law; not a completed authorization; not AHJ approval; does not replace hot work / CSE permits. LOTO card: blank authorization + isolation checklist + device log; not OSHA law; not a completed lockout; not a written energy-control program.
 
@@ -35,7 +35,7 @@
 | Hot work permit | `assets/thumbs/hot-work-permit.png` |
 | Confined space entry permit | `assets/thumbs/confined-space-entry-permit.png` |
 | Permit-to-work | `assets/thumbs/permit-to-work.png` |
-| Lockout-Tagout pack | `assets/thumbs/lockout-tagout-pack.png` |
+| SKU-NW-LOTO-01 Lockout-Tagout pack | `assets/thumbs/lockout-tagout-pack.png` |
 
 Also: lantern brand mark (`assets/logo.png` header 256, `assets/logo-512.png`, `assets/favicon-32.png`, `assets/favicon-16.png`, `assets/apple-touch-icon.png`, root `favicon.ico`). Legacy `assets/mark.svg` unused. `assets/store.css`. Sample pages: `scripts/sample-pages/`. Rebuild: `scripts/generate_samples.py`.
 
@@ -70,17 +70,19 @@ Hot work card copy is finished buyer language (“for your department”). Do no
 | Cold weather SOP | $19 | https://buy.stripe.com/cNi7sM8524EwgXGfhR1Jm0b |
 | Member meeting packet | $19 | https://buy.stripe.com/3cI3cw0CA9YQ22M9Xx1Jm0a |
 
-### Safety permits (Safety Pack A)
+### Safety aisle (Safety Pack A + LOTO)
 
 | Product | Price | Buy |
 |---|---|---|
 | Hot work permit | $19 | https://buy.stripe.com/eVq3cwbhe8UMfTC7Pp1Jm0c |
 | Confined space entry permit | $24 | https://buy.stripe.com/aFadRadpmc6Y6j2d9J1Jm0d |
 | Permit-to-work | $19 | https://buy.stripe.com/dRm5kE3OM5IAgXGfhR1Jm0e |
-| Lockout-Tagout pack | $19 | https://buy.stripe.com/dRmfZietq3AsfTC7Pp1Jm0f |
+| SKU-NW-LOTO-01 Lockout-Tagout pack | $19 | https://buy.stripe.com/dRmfZietq3AsfTC7Pp1Jm0f |
 
 ## Notes
 
 - Public storefront prefers nightwarder.com. Avoid personal-name leakage in public copy and asset paths.
 - Samples are sterile EXAMPLE / Station 99 / 2099 demo screenshots of the live kits.
-- Catalog date 2026-09-05.
+- Audience copy (title, meta, eyebrow, footer) covers fire / EMS, safety departments, and facility / industrial EM — not volunteer FD only.
+- Catalog date 2026-09-05. Count is 16.
+- LOTO Buy is live: https://buy.stripe.com/dRmfZietq3AsfTC7Pp1Jm0f. Do not rotate or recreate it.
