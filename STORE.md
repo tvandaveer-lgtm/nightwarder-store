@@ -1,16 +1,29 @@
 # NightWarder store — 2026-09-05
 
-**Status:** live sample screenshots. Catalog date 2026-09-05. Audience widened beyond volunteer FD to fire / EMS, safety departments, and facility / industrial EM.
+**Status:** live sample screenshots. Catalog date 2026-09-05. Count is 21. Voice: volunteer / small-department fire / EMS first.
 
 **Live URL:** https://nightwarder.com/
 
 **Repo:** GitHub Pages on `nightwarder-store` (`index.html` + `assets/`). CNAME remains `nightwarder.com`.
 
+**Storefront aisles:** Gear (`#gear`) · Permits (`#permits`) · Ops (`#ops`) · Admin (`#admin`). Nav / footer: Gear · Permits · Ops · Admin · Support. No “Word kits” aisle. No Core category pack.
+
+**Category map (cards only — not Stripe packs):**
+
+| Aisle | Anchor | SKUs |
+|---|---|---|
+| Gear & Inspection | `#gear` | ROPE, TURN, CYL, LADDER, EXT, APP, PPE |
+| Permits / Energy | `#permits` | PTW, HWP, CSE, LOTO (Safety Pack A stays with permits; LOTO with permits) |
+| Ops Readiness | `#ops` | HEAT, COLD, EXP, AAR, TRAIN |
+| Admin / Treasurer | `#admin` | TR, BUD, DON, MTG |
+
+BUNDLE-01 (TR+AAR+HEAT, $49) is a leftover mix listed last under Admin. It is not a category pack. Do not expand it. Do not wrap permits into it. Hero does not sell a Core / category pack.
+
 **Checkout:** existing live Stripe Payment Links only. Do not invent, rotate, or recreate buy URLs. Do not change prices.
 
-**Fulfillment / support:** file by email after payment from `nightwarder@agentmail.to` only. Not an instant download.
+**Fulfillment / support:** File by email after Stripe checkout from `nightwarder@agentmail.to` only. Not an instant download. Published refund line: Digital delivery · contact nightwarder@ within 7 days of purchase for refund requests.
 
-**Audience copy:** fire / EMS, safety departments, and facility / industrial EM. Keep the firehouse niche; do not write as if OSHA is the product.
+**Audience copy:** volunteer and small-department fire / EMS first. Keep the firehouse niche. Do not write facility EM / house-or-site drift. Do not write as if OSHA is the product.
 
 **Disclaimer (on page):** blank templates for the department to adopt. Not completed reports, not legal advice, and not an audit. Heat and cold weather SOPs are templates only — not OSHA law. Permits are blank templates — not completed authorizations, not AHJ approval, and not OSHA law. PTW card: blank work-authorization cover template; not OSHA law; not a completed authorization; not AHJ approval; does not replace hot work / CSE permits. LOTO card: blank authorization + isolation checklist + device log; not OSHA law; not a completed lockout; not a written energy-control program.
 
@@ -47,6 +60,8 @@ Also: lantern brand mark (`assets/logo.png` header 256, `assets/logo-512.png`, `
 Hot work card copy is finished buyer language (“for your department”). Do not leave `[Department]` tokens on live buy cards. Kit gold fields may still use fillable department blanks.
 
 ## Catalog (21) — buy URLs frozen
+
+Checkout table below is frozen (same products, prices, and `buy.stripe.com` URLs). Headings in this table are the old checkout groups, not storefront aisles. Storefront aisles are Gear / Permits / Ops / Admin above.
 
 ### Core
 
@@ -91,41 +106,41 @@ Hot work card copy is finished buyer language (“for your department”). Do no
 
 ## Guides (`/seo/` aisle map)
 
-Aisle map matches the store: Core / Ops / Word / Safety. Shared disclaimer on each page: Blank template for [Department] to adopt and fill. Not legal advice. Not a completed report or authorization. Not OSHA law. Not AHJ approval. Not an audit. No new Stripe Payment Links. No Gumroad. ROPE / TURN / CYL / LADDER / EXT Buy CTAs use the frozen catalog links below. LADDER and EXT are aisle cards only — no dedicated guide HTML yet (HANDOFF: add guide Buy links only when those pages exist).
+Aisle map matches the store: Gear / Permits / Ops / Admin. Shared disclaimer on each page: Blank template for [Department] to adopt and fill. Not legal advice. Not a completed report or authorization. Not OSHA law. Not AHJ approval. Not an audit. No new Stripe Payment Links. No Gumroad. ROPE / TURN / CYL / LADDER / EXT Buy CTAs use the frozen catalog links below. LADDER and EXT are aisle cards only — no dedicated guide HTML yet (HANDOFF: add guide Buy links only when those pages exist).
 
 | Aisle | Page | Path | CTA |
 |---|---|---|---|
 | Index | Guides aisle map | `seo/index.html` | Catalog `#catalog` |
-| Core | Treasurer report | `seo/volunteer-fd-monthly-treasurer-report.html` | Live TR buy + `#core` |
-| Core | Incident AAR | `seo/volunteer-fd-incident-aar.html` | Live AAR buy + `#core` |
-| Core | Heat illness SOP | `seo/firefighter-heat-illness-sop-blank.html` | Live HEAT buy + `#core` |
+| Admin | Treasurer report | `seo/volunteer-fd-monthly-treasurer-report.html` | Live TR buy + `#admin` |
+| Ops | Incident AAR | `seo/volunteer-fd-incident-aar.html` | Live AAR buy + `#ops` |
+| Ops | Heat illness SOP | `seo/firefighter-heat-illness-sop-blank.html` | Live HEAT buy + `#ops` |
 | Ops | Training cert tracker | `seo/volunteer-fd-training-cert-tracker.html` | Live TRAIN buy + `#ops` |
-| Ops | Annual budget builder | `seo/volunteer-fd-annual-budget-spreadsheet.html` | Live BUD buy + `#ops` |
-| Ops | Apparatus inspection log | `seo/volunteer-fd-apparatus-inspection-log.html` | Live APP buy + `#ops` |
-| Ops | PPE / SCBA tracker | `seo/volunteer-fd-ppe-scba-tracker.html` | Live PPE buy + `#ppe-scba` / `#ops` |
-| Ops | Donation register | `seo/volunteer-fd-donation-register.html` | Live DON buy + `#ops` |
-| Ops | Life-safety rope log | `seo/volunteer-fd-life-safety-rope-inspection-log.html` | Live ROPE buy + `#rope` / `#ops` |
-| Ops | Turnout advanced cleaning log | `seo/turnout-gear-advanced-cleaning-log.html` | Live TURN buy + `#turnout` / `#ops` |
-| Ops | SCBA cylinder due dates | `seo/scba-cylinder-hydro-due-date-spreadsheet.html` | Live CYL buy + `#scba-cyl` / `#ops` |
-| Ops | Ladder inspection log | aisle card on `seo/index.html` only (no guide HTML yet) | Live LADDER buy + `#ladder` / `#ops` |
-| Ops | Extinguisher inspection log | aisle card on `seo/index.html` only (no guide HTML yet) | Live EXT buy + `#extinguisher` / `#ops` |
-| Word | Exposure / near-miss log | `seo/firefighter-exposure-near-miss-log.html` | Live EXP buy + `#word` |
-| Word | Cold weather SOP | `seo/firefighter-cold-weather-sop-blank.html` | Live COLD buy + `#word` |
-| Word | Member meeting packet | `seo/volunteer-fd-meeting-agenda-minutes.html` | Live MTG buy + `#word` |
-| Safety | Hot work permit | `seo/volunteer-fd-hot-work-permit.html` | Live HWP buy + `#hot-work` / `#permits` |
-| Safety | Confined space entry | `seo/volunteer-fd-confined-space-entry-permit.html` | Live CSE buy + `#confined-space` / `#permits` |
-| Safety | Permit to work | `seo/volunteer-fd-permit-to-work.html` | Live PTW buy + `#permit-to-work` / `#permits` |
-| Safety | Lockout-Tagout pack | `seo/volunteer-fd-loto-lockout-tagout.html` | Live LOTO buy + `#loto` / `#permits` |
+| Admin | Annual budget builder | `seo/volunteer-fd-annual-budget-spreadsheet.html` | Live BUD buy + `#admin` |
+| Gear | Apparatus inspection log | `seo/volunteer-fd-apparatus-inspection-log.html` | Live APP buy + `#gear` |
+| Gear | PPE / SCBA tracker | `seo/volunteer-fd-ppe-scba-tracker.html` | Live PPE buy + `#ppe-scba` / `#gear` |
+| Admin | Donation register | `seo/volunteer-fd-donation-register.html` | Live DON buy + `#admin` |
+| Gear | Life-safety rope log | `seo/volunteer-fd-life-safety-rope-inspection-log.html` | Live ROPE buy + `#rope` / `#gear` |
+| Gear | Turnout advanced cleaning log | `seo/turnout-gear-advanced-cleaning-log.html` | Live TURN buy + `#turnout` / `#gear` |
+| Gear | SCBA cylinder due dates | `seo/scba-cylinder-hydro-due-date-spreadsheet.html` | Live CYL buy + `#scba-cyl` / `#gear` |
+| Gear | Ladder inspection log | aisle card on `seo/index.html` only (no guide HTML yet) | Live LADDER buy + `#ladder` / `#gear` |
+| Gear | Extinguisher inspection log | aisle card on `seo/index.html` only (no guide HTML yet) | Live EXT buy + `#extinguisher` / `#gear` |
+| Ops | Exposure / near-miss log | `seo/firefighter-exposure-near-miss-log.html` | Live EXP buy + `#ops` |
+| Ops | Cold weather SOP | `seo/firefighter-cold-weather-sop-blank.html` | Live COLD buy + `#ops` |
+| Admin | Member meeting packet | `seo/volunteer-fd-meeting-agenda-minutes.html` | Live MTG buy + `#admin` |
+| Permits | Hot work permit | `seo/volunteer-fd-hot-work-permit.html` | Live HWP buy + `#hot-work` / `#permits` |
+| Permits | Confined space entry | `seo/volunteer-fd-confined-space-entry-permit.html` | Live CSE buy + `#confined-space` / `#permits` |
+| Permits | Permit to work | `seo/volunteer-fd-permit-to-work.html` | Live PTW buy + `#permit-to-work` / `#permits` |
+| Permits | Lockout-Tagout pack | `seo/volunteer-fd-loto-lockout-tagout.html` | Live LOTO buy + `#loto` / `#permits` |
 
 Live buy URLs stay the frozen catalog links in the table above this section. Do not rotate or recreate them.
 
-Catalog card ids: `#ppe-scba`, `#rope`, `#turnout`, `#scba-cyl`, `#ladder`, `#extinguisher`, `#confined-space`, `#hot-work`, `#permit-to-work`, `#loto`.
+Catalog card ids: `#ppe-scba`, `#rope`, `#turnout`, `#scba-cyl`, `#ladder`, `#extinguisher`, `#confined-space`, `#hot-work`, `#permit-to-work`, `#loto`, `#bundle` (legacy TR+AAR+HEAT mix).
 
 ## Notes
 
 - Public storefront prefers nightwarder.com. Avoid personal-name leakage in public copy and asset paths.
 - Samples are sterile EXAMPLE / Station 99 / 2099 demo screenshots of the live kits.
-- Audience copy (title, meta, eyebrow, footer) covers fire / EMS, safety departments, and facility / industrial EM — not volunteer FD only.
+- Audience copy (title, meta, eyebrow, footer) leads with volunteer and small-department fire / EMS. Do not write facility EM / house-or-site drift.
 - Catalog date 2026-09-05. Count is 21.
 - LOTO Buy is live: https://buy.stripe.com/dRmfZietq3AsfTC7Pp1Jm0f. Do not rotate or recreate it.
 - ROPE Buy is live: https://buy.stripe.com/5kQcN6852gneazi2v51Jm0g. Do not rotate or recreate it.
