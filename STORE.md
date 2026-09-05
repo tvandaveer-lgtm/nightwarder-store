@@ -79,22 +79,35 @@ Hot work card copy is finished buyer language (“for your department”). Do no
 | Permit-to-work | $19 | https://buy.stripe.com/dRm5kE3OM5IAgXGfhR1Jm0e |
 | SKU-NW-LOTO-01 Lockout-Tagout pack | $19 | https://buy.stripe.com/dRmfZietq3AsfTC7Pp1Jm0f |
 
-## Guides (P0 SEO long-tail · REV1)
+## Guides (`/seo/` aisle map)
 
-River BRIEF REV1 §5. Shared disclaimer on each: Blank template for your department to adopt and fill. Not legal advice. Not a completed report or authorization. Not OSHA law. Not AHJ approval. Not an audit. No new Stripe Payment Links.
+Aisle map matches the store: Core / Ops / Word / Safety. Shared disclaimer on each page: Blank template for [Department] to adopt and fill. Not legal advice. Not a completed report or authorization. Not OSHA law. Not AHJ approval. Not an audit. No new Stripe Payment Links. No Gumroad. ROPE / TURN / CYL stay catalog-only (`#ops`) — no buy.stripe on those three.
 
-| Page | Path | CTA |
-|---|---|---|
-| Guides index | `seo/index.html` | Catalog `#catalog` |
-| Life-safety rope log | `seo/volunteer-fd-life-safety-rope-inspection-log.html` | Catalog `#ops` / `#catalog` (ROPE buy not live) |
-| Turnout advanced cleaning log | `seo/turnout-gear-advanced-cleaning-log.html` | Catalog `#ops` + live PPE buy URL |
-| SCBA cylinder due dates | `seo/scba-cylinder-hydro-due-date-spreadsheet.html` | Catalog `#ops` + live PPE buy URL |
-| PPE / SCBA tracker | `seo/volunteer-fd-ppe-scba-tracker.html` | Live PPE buy URL + catalog `#ppe-scba` / `#ops` |
-| Confined space entry | `seo/volunteer-fd-confined-space-entry-permit.html` | Live CSE buy URL + catalog `#confined-space` / `#permits` |
+| Aisle | Page | Path | CTA |
+|---|---|---|---|
+| Index | Guides aisle map | `seo/index.html` | Catalog `#catalog` |
+| Core | Treasurer report | `seo/volunteer-fd-monthly-treasurer-report.html` | Live TR buy + `#core` |
+| Core | Incident AAR | `seo/volunteer-fd-incident-aar.html` | Live AAR buy + `#core` |
+| Core | Heat illness SOP | `seo/firefighter-heat-illness-sop-blank.html` | Live HEAT buy + `#core` |
+| Ops | Training cert tracker | `seo/volunteer-fd-training-cert-tracker.html` | Live TRAIN buy + `#ops` |
+| Ops | Annual budget builder | `seo/volunteer-fd-annual-budget-spreadsheet.html` | Live BUD buy + `#ops` |
+| Ops | Apparatus inspection log | `seo/volunteer-fd-apparatus-inspection-log.html` | Live APP buy + `#ops` |
+| Ops | PPE / SCBA tracker | `seo/volunteer-fd-ppe-scba-tracker.html` | Live PPE buy + `#ppe-scba` / `#ops` |
+| Ops | Donation register | `seo/volunteer-fd-donation-register.html` | Live DON buy + `#ops` |
+| Ops | Life-safety rope log | `seo/volunteer-fd-life-safety-rope-inspection-log.html` | Catalog `#ops` only (HOLD) |
+| Ops | Turnout advanced cleaning log | `seo/turnout-gear-advanced-cleaning-log.html` | Catalog `#ops` only (HOLD) |
+| Ops | SCBA cylinder due dates | `seo/scba-cylinder-hydro-due-date-spreadsheet.html` | Catalog `#ops` only (HOLD) |
+| Word | Exposure / near-miss log | `seo/firefighter-exposure-near-miss-log.html` | Live EXP buy + `#word` |
+| Word | Cold weather SOP | `seo/firefighter-cold-weather-sop-blank.html` | Live COLD buy + `#word` |
+| Word | Member meeting packet | `seo/volunteer-fd-meeting-agenda-minutes.html` | Live MTG buy + `#word` |
+| Safety | Hot work permit | `seo/volunteer-fd-hot-work-permit.html` | Live HWP buy + `#hot-work` / `#permits` |
+| Safety | Confined space entry | `seo/volunteer-fd-confined-space-entry-permit.html` | Live CSE buy + `#confined-space` / `#permits` |
+| Safety | Permit to work | `seo/volunteer-fd-permit-to-work.html` | Live PTW buy + `#permit-to-work` / `#permits` |
+| Safety | Lockout-Tagout pack | `seo/volunteer-fd-loto-lockout-tagout.html` | Live LOTO buy + `#loto` / `#permits` |
 
-Live buy URLs (already on `index.html`): PPE `https://buy.stripe.com/3cI4gAcli2wobDmc5F1Jm07` · CSE `https://buy.stripe.com/aFadRadpmc6Y6j2d9J1Jm0d`.
+Live buy URLs stay the frozen catalog links in the table above this section. Do not rotate or recreate them.
 
-Catalog card ids: `#ppe-scba`, `#confined-space`, `#hot-work`, `#permit-to-work`.
+Catalog card ids: `#ppe-scba`, `#confined-space`, `#hot-work`, `#permit-to-work`, `#loto`.
 
 ## Notes
 
