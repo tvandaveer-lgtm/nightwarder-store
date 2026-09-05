@@ -6,7 +6,7 @@
 
 **Repo:** GitHub Pages on `nightwarder-store` (`index.html` + `assets/`). CNAME remains `nightwarder.com`.
 
-**Checkout:** existing live Stripe Payment Links only. Do not invent, rotate, or recreate buy URLs. Do not change prices. Exception: SKU-NW-LOTO-01 Buy href is `#loto-pending` (HOLD / pending CLEAR). Do not create a Stripe Payment Link for LOTO until Book CLEAR.
+**Checkout:** existing live Stripe Payment Links only. Do not invent, rotate, or recreate buy URLs. Do not change prices.
 
 **Fulfillment / support:** file by email after payment from `nightwarder@agentmail.to` only. Not an instant download.
 
@@ -39,7 +39,7 @@ Also: lantern brand mark (`assets/logo.png` header 256, `assets/logo-512.png`, `
 
 Hot work card copy is finished buyer language (“for your department”). Do not leave `[Department]` tokens on live buy cards. Kit gold fields may still use fillable department blanks.
 
-## Catalog (16) — buy URLs frozen except LOTO HOLD
+## Catalog (16) — buy URLs frozen
 
 ### Core
 
@@ -75,7 +75,7 @@ Hot work card copy is finished buyer language (“for your department”). Do no
 | Hot work permit | $19 | https://buy.stripe.com/eVq3cwbhe8UMfTC7Pp1Jm0c |
 | Confined space entry permit | $24 | https://buy.stripe.com/aFadRadpmc6Y6j2d9J1Jm0d |
 | Permit-to-work | $19 | https://buy.stripe.com/dRm5kE3OM5IAgXGfhR1Jm0e |
-| SKU-NW-LOTO-01 Lockout-Tagout pack | $19 | HOLD / pending CLEAR (`#loto-pending`) |
+| SKU-NW-LOTO-01 Lockout-Tagout pack | $19 | https://buy.stripe.com/dRmfZietq3AsfTC7Pp1Jm0f |
 
 ## Notes
 
@@ -83,4 +83,4 @@ Hot work card copy is finished buyer language (“for your department”). Do no
 - Samples are sterile EXAMPLE / Station 99 / 2099 demo screenshots of the live kits.
 - Audience copy (title, meta, eyebrow, footer) covers fire / EMS, safety departments, and facility / industrial EM — not volunteer FD only.
 - Catalog date 2026-09-05. Count is 16.
-- LOTO Buy stays a placeholder until Book CLEAR. Do not add a buy.stripe.com URL for SKU-NW-LOTO-01.
+- LOTO Buy is live: https://buy.stripe.com/dRmfZietq3AsfTC7Pp1Jm0f. Do not rotate or recreate it.
