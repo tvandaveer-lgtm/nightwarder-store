@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+  :root { --navy:#1b365d; --gold:#f3e2a6; --label:#d7e0ea; --ink:#1a2330; --muted:#5c6774; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:#fff; color:var(--ink);
+    font-family: "Liberation Serif", "Times New Roman", Georgia, serif; }
+  body { width:1200px; min-height:1550px; padding:22px 28px 28px; }
+  .meta { font-family:"IBM Plex Sans", Arial, sans-serif; font-size:12px; color:#8a93a0; }
+  .badge { position:absolute; top:18px; right:28px; background:#16304f; color:#fff;
+    border-radius:10px; padding:8px 14px; font-size:13px; font-weight:700;
+    font-family:"IBM Plex Sans", Arial, sans-serif; }
+  .badge em { color:#f0c14b; font-style:normal; }
+  .wrap { position:relative; }
+  h1 { margin:10px 0 4px; font-size:30px; color:var(--navy); }
+  .bar { background:var(--navy); color:#fff; font-size:20px; font-weight:700;
+    padding:10px 14px; margin:8px 0 8px; letter-spacing:.02em; }
+  .sub { font-style:italic; color:var(--muted); font-size:15px; margin:0 0 12px; }
+  table { border-collapse:collapse; width:100%; font-size:15px; margin:0 0 12px;
+    font-family:"IBM Plex Sans", Arial, sans-serif; }
+  th { background:var(--navy); color:#fff; font-weight:650; text-align:left;
+    padding:7px 8px; }
+  td { border:1px solid #b7c0cb; padding:7px 8px; }
+  td.l { background:var(--label); font-weight:600; width:24%; }
+  td.g { background:var(--gold); min-height:28px; }
+  .checks { display:grid; grid-template-columns:repeat(4,1fr); gap:8px;
+    background:var(--gold); padding:12px; border:1px solid #d4c48a;
+    font-family:"IBM Plex Sans", Arial, sans-serif; font-size:15px; }
+  .checks span { display:flex; align-items:center; gap:8px; }
+  .box { width:16px; height:16px; border:1.5px solid #1b365d; background:#fff; }
+  .foot { font-size:12px; color:#8a93a0; font-style:italic; margin-top:10px; }
+  h2 { margin:14px 0 4px; font-size:22px; color:var(--navy); }
+  h3 { margin:8px 0 4px; font-size:16px; color:var(--navy);
+    font-family:"IBM Plex Sans", Arial, sans-serif; }
+  .rule { border:0; border-top:2px solid var(--navy); margin:4px 0 12px; }
+  .ver { font-style:italic; font-size:12px; color:#8a93a0; margin:0 0 2px; }
+  .warn { border:2px solid #e0c36a; background:#fff6d0; padding:10px 12px; margin:6px 0 12px;
+    font-family:"IBM Plex Sans", Arial, sans-serif; font-size:14px; }
+  .goldbox { background:var(--gold); border:2px solid #c4a24a; padding:10px 12px; margin:8px 0 12px;
+    font-family:"IBM Plex Sans", Arial, sans-serif; font-size:13.5px; font-weight:700; }
+  table.goldframe { outline:3px solid #c4a24a; }
+</style></head>
+<body><div class="wrap">
+<p class="meta">NightWarder | SKU-NW-REIMB-01 | Blank template</p>
+<p class="ver">Ver. 2026-09-06</p>
+<div class="badge">EXAMPLE · <em>Station 99</em></div>
+<hr class="rule"/>
+<h1>Expense reimbursement request</h1>
+<p class="sub">Blank request for EXAMPLE VFD — Station 99. Gold = input. Not a completed payment. Not a treasurer report. Not accounting advice. Fake 2099 chrome only.</p>
+<table>
+  <tr><td class="l">Department / company</td><td class="g">EXAMPLE VFD — Station 99</td><td class="l">Request date</td><td class="g"></td></tr>
+  <tr><td class="l">Member / requester (print)</td><td class="g"></td><td class="l">Rank / role</td><td class="g"></td></tr>
+  <tr><td class="l">Purpose of expense</td><td class="g"></td><td class="l">Incident / drill # (if any)</td><td class="g"></td></tr>
+  <tr><td class="l">Receipts attached? (Y / N + count)</td><td class="g"></td><td class="l">Payee / check payable to</td><td class="g"></td></tr>
+</table>
+<h1>Line items</h1>
+<p class="sub">Empty rows. Fill from real receipts. Do not invent amounts from this sample.</p>
+<table>
+  <tr><th style="width:8%">#</th><th>Date</th><th>Vendor / description</th><th style="width:18%">Amount</th><th style="width:16%">Account / line</th></tr>
+  <tr><td>1</td><td class="g" style="height:26px"></td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td>2</td><td class="g" style="height:26px"></td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td>3</td><td class="g" style="height:26px"></td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td>4</td><td class="g" style="height:26px"></td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td colspan="3" class="l">Total requested</td><td class="g"></td><td></td></tr>
+</table>
+<h1>Approvals</h1>
+<p class="sub">Gold blanks. A blank signature means this is still a template — not a completed reimbursement.</p>
+<table class="goldframe">
+  <tr><th style="width:26%">Role</th><th>Printed name</th><th>Signature</th><th style="width:16%">Date</th></tr>
+  <tr><td class="l">Requester</td><td class="g" style="height:28px"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="l">Officer / approver</td><td class="g" style="height:28px"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="l">Treasurer</td><td class="g" style="height:28px"></td><td class="g"></td><td class="g"></td></tr>
+</table>
+<div class="goldbox">NOT A COMPLETED PAYMENT. Unsigned gold rows mean nothing has been reimbursed on this form. Not a treasurer report. Not accounting advice. EXAMPLE · Station 99 only.</div>
+<p class="foot">SKU-NW-REIMB-01 | Blank template | Not a completed record | Not legal advice | EXAMPLE ONLY</p>
+</div></body></html>
