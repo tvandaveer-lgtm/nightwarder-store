@@ -1,6 +1,6 @@
 # NightWarder store — 2026-09-05
 
-**Status:** live sample screenshots. Catalog date 2026-09-05. Count is 21. Voice: volunteer / small-department fire / EMS first.
+**Status:** live sample screenshots. Catalog date 2026-09-05. Count is 22. Voice: volunteer / small-department fire / EMS first.
 
 **Live URL:** https://nightwarder.com/
 
@@ -12,7 +12,7 @@
 
 | Aisle | Anchor | SKUs |
 |---|---|---|
-| Gear & Inspection | `#gear` | ROPE, TURN, CYL, LADDER, EXT, APP, PPE |
+| Gear & Inspection | `#gear` | ROPE, TURN, CYL, LADDER, EXT, GEN, APP, PPE |
 | Permits / Energy | `#permits` | PTW, HWP, CSE, LOTO (Safety Pack A stays with permits; LOTO with permits) |
 | Ops Readiness | `#ops` | HEAT, COLD, EXP, AAR, TRAIN |
 | Admin / Treasurer | `#admin` | TR, BUD, DON, MTG |
@@ -54,12 +54,13 @@ BUNDLE-01 (TR+AAR+HEAT, $49) is a leftover mix listed last under Admin. It is no
 | SKU-NW-CYL-01 SCBA cylinder due calendar | Text card (no Station 99 sample PNG yet) |
 | SKU-NW-LADDER-01 Ladder inspection log (ground + aerial) | Text card (no Station 99 sample PNG yet) |
 | SKU-NW-EXT-01 Extinguisher inspection log | Text card (no Station 99 sample PNG yet) |
+| SKU-NW-GEN-01 Generator / fuel / station utilities log | Text card (no Station 99 sample PNG yet) |
 
 Also: lantern brand mark (`assets/logo.png` header 256, `assets/logo-512.png`, `assets/favicon-32.png`, `assets/favicon-16.png`, `assets/apple-touch-icon.png`, root `favicon.ico`). Legacy `assets/mark.svg` unused. `assets/store.css`. Sample pages: `scripts/sample-pages/`. Rebuild: `scripts/generate_samples.py`. SEO guide pages: `seo/`.
 
 Hot work card copy is finished buyer language (“for your department”). Do not leave `[Department]` tokens on live buy cards. Kit gold fields may still use fillable department blanks.
 
-## Catalog (21) — buy URLs frozen
+## Catalog (22) — buy URLs frozen
 
 Checkout table below is frozen (same products, prices, and `buy.stripe.com` URLs). Headings in this table are the old checkout groups, not storefront aisles. Storefront aisles are Gear / Permits / Ops / Admin above.
 
@@ -86,6 +87,7 @@ Checkout table below is frozen (same products, prices, and `buy.stripe.com` URLs
 | SKU-NW-CYL-01 SCBA cylinder due calendar | $19 | https://buy.stripe.com/cNi3cw2KI0ogfTCfhR1Jm0h |
 | SKU-NW-LADDER-01 Ladder inspection log (ground + aerial) | $19 | https://buy.stripe.com/7sYcN670Y0ogfTCedN1Jm0j |
 | SKU-NW-EXT-01 Extinguisher inspection log | $19 | https://buy.stripe.com/fZu3cwgBydb28ra0mX1Jm0k |
+| SKU-NW-GEN-01 Generator / fuel / station utilities log | $19 | https://buy.stripe.com/5kQbJ2cli7QI36Q0mX1Jm0l |
 
 ### Word kits
 
@@ -106,7 +108,7 @@ Checkout table below is frozen (same products, prices, and `buy.stripe.com` URLs
 
 ## Guides (`/seo/` aisle map)
 
-Aisle map matches the store: Gear / Permits / Ops / Admin. Shared disclaimer on each page: Blank template for [Department] to adopt and fill. Not legal advice. Not a completed report or authorization. Not OSHA law. Not AHJ approval. Not an audit. No new Stripe Payment Links. No Gumroad. ROPE / TURN / CYL / LADDER / EXT Buy CTAs use the frozen catalog links below. LADDER and EXT are aisle cards only — no dedicated guide HTML yet (HANDOFF: add guide Buy links only when those pages exist).
+Aisle map matches the store: Gear / Permits / Ops / Admin. Shared disclaimer on each page: Blank template for [Department] to adopt and fill. Not legal advice. Not a completed report or authorization. Not OSHA law. Not AHJ approval. Not an audit. No new Stripe Payment Links. No Gumroad. ROPE / TURN / CYL / LADDER / EXT / GEN Buy CTAs use the frozen catalog links below. LADDER and EXT are aisle cards only — no dedicated guide HTML yet (HANDOFF: add guide Buy links only when those pages exist). GEN guide is live; fences stay on the card (not NFPA 110 certification; not a completed EPSS; not an apparatus inspection; cadence / load-test years = buyer/AHJ INPUT).
 
 | Aisle | Page | Path | CTA |
 |---|---|---|---|
@@ -124,6 +126,7 @@ Aisle map matches the store: Gear / Permits / Ops / Admin. Shared disclaimer on 
 | Gear | SCBA cylinder due dates | `seo/scba-cylinder-hydro-due-date-spreadsheet.html` | Live CYL buy + `#scba-cyl` / `#gear` |
 | Gear | Ladder inspection log | aisle card on `seo/index.html` only (no guide HTML yet) | Live LADDER buy + `#ladder` / `#gear` |
 | Gear | Extinguisher inspection log | aisle card on `seo/index.html` only (no guide HTML yet) | Live EXT buy + `#extinguisher` / `#gear` |
+| Gear | Station generator / fuel log | `seo/volunteer-fire-station-generator-fuel-log.html` | Live GEN buy + `#generator` / `#gear` |
 | Ops | Exposure / near-miss log | `seo/firefighter-exposure-near-miss-log.html` | Live EXP buy + `#ops` |
 | Ops | Cold weather SOP | `seo/firefighter-cold-weather-sop-blank.html` | Live COLD buy + `#ops` |
 | Admin | Member meeting packet | `seo/volunteer-fd-meeting-agenda-minutes.html` | Live MTG buy + `#admin` |
@@ -134,17 +137,18 @@ Aisle map matches the store: Gear / Permits / Ops / Admin. Shared disclaimer on 
 
 Live buy URLs stay the frozen catalog links in the table above this section. Do not rotate or recreate them.
 
-Catalog card ids: `#ppe-scba`, `#rope`, `#turnout`, `#scba-cyl`, `#ladder`, `#extinguisher`, `#confined-space`, `#hot-work`, `#permit-to-work`, `#loto`, `#bundle` (legacy TR+AAR+HEAT mix).
+Catalog card ids: `#ppe-scba`, `#rope`, `#turnout`, `#scba-cyl`, `#ladder`, `#extinguisher`, `#generator`, `#confined-space`, `#hot-work`, `#permit-to-work`, `#loto`, `#bundle` (legacy TR+AAR+HEAT mix).
 
 ## Notes
 
 - Public storefront prefers nightwarder.com. Avoid personal-name leakage in public copy and asset paths.
 - Samples are sterile EXAMPLE / Station 99 / 2099 demo screenshots of the live kits.
 - Audience copy (title, meta, eyebrow, footer) leads with volunteer and small-department fire / EMS. Do not write facility EM / house-or-site drift.
-- Catalog date 2026-09-05. Count is 21.
+- Catalog date 2026-09-05. Count is 22. GEN-01 is v2026-09-05a.
 - LOTO Buy is live: https://buy.stripe.com/dRmfZietq3AsfTC7Pp1Jm0f. Do not rotate or recreate it.
 - ROPE Buy is live: https://buy.stripe.com/5kQcN6852gneazi2v51Jm0g. Do not rotate or recreate it.
 - TURN Buy is live: https://buy.stripe.com/aFa8wQ8521sk7n6glV1Jm0i. Do not rotate or recreate it.
 - CYL Buy is live: https://buy.stripe.com/cNi3cw2KI0ogfTCfhR1Jm0h. Do not rotate or recreate it.
 - LADDER Buy is live: https://buy.stripe.com/7sYcN670Y0ogfTCedN1Jm0j. Do not rotate or recreate it.
 - EXT Buy is live: https://buy.stripe.com/fZu3cwgBydb28ra0mX1Jm0k. Do not rotate or recreate it.
+- GEN Buy is live: https://buy.stripe.com/5kQbJ2cli7QI36Q0mX1Jm0l. Do not rotate or recreate it.
