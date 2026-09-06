@@ -649,6 +649,267 @@ PAGES["lockout-tagout-pack"] = (
 """,
 )
 
+PAGES["volunteer-membership-application"] = (
+    "doc",
+    1200,
+    1550,
+    f"""
+<p class="meta">NightWarder | SKU-NW-APP-01 | Blank template</p>
+<p class="ver">Ver. 2026-09-06</p>
+{badge()}
+<hr class="rule"/>
+<h1>Volunteer membership application</h1>
+<p class="sub">Blank application for EXAMPLE VFD — Station 99. Gold = input. Empty rows are the product. Not a completed membership record. Not legal advice. Fake 2099 chrome only.</p>
+<table>
+  <tr><td class="l">Department / company</td><td class="g">EXAMPLE VFD — Station 99</td><td class="l">Application date</td><td class="g"></td></tr>
+  <tr><td class="l">Applicant name (print)</td><td class="g"></td><td class="l">Preferred name</td><td class="g"></td></tr>
+  <tr><td class="l">Mailing address</td><td class="g"></td><td class="l">Phone / radio pager</td><td class="g"></td></tr>
+  <tr><td class="l">Emergency contact (name)</td><td class="g"></td><td class="l">Emergency contact phone</td><td class="g"></td></tr>
+</table>
+<h1>Availability and interest</h1>
+<p class="sub">Check what the applicant offers. Do not invent a roster from this sample.</p>
+<div class="checks" style="grid-template-columns:repeat(3,1fr)">
+  <span><i class="box"></i> Interior / suppression</span>
+  <span><i class="box"></i> Driver / operator</span>
+  <span><i class="box"></i> EMS / first response</span>
+  <span><i class="box"></i> Support / admin</span>
+  <span><i class="box"></i> Junior / explorer (local rules)</span>
+  <span><i class="box"></i> Other (note below)</span>
+</div>
+<table>
+  <tr><td class="l">Nights / weekends available (buyer notes)</td><td class="g" style="height:28px"></td></tr>
+  <tr><td class="l">Prior fire / EMS experience (if any)</td><td class="g" style="height:28px"></td></tr>
+  <tr><td class="l">Current certifications held (buyer lists)</td><td class="g" style="height:28px"></td></tr>
+</table>
+<h1>Signatures</h1>
+<p class="sub">Gold blanks. A blank signature means this is still a template — not an accepted membership.</p>
+<table class="goldframe">
+  <tr><th style="width:26%">Role</th><th>Printed name</th><th>Signature</th><th style="width:16%">Date</th></tr>
+  <tr><td class="l">Applicant</td><td class="g" style="height:28px"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="l">Membership officer</td><td class="g" style="height:28px"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="l">Chief / designee</td><td class="g" style="height:28px"></td><td class="g"></td><td class="g"></td></tr>
+</table>
+<div class="goldbox">NOT A COMPLETED MEMBERSHIP RECORD. Unsigned gold rows mean no one has been accepted on this form. Not legal advice. Not a background check. EXAMPLE · Station 99 only.</div>
+<p class="foot">SKU-NW-APP-01 | Blank template | Not a completed record | Not legal advice | EXAMPLE ONLY</p>
+""",
+)
+
+PAGES["expense-reimbursement-request"] = (
+    "doc",
+    1200,
+    1550,
+    f"""
+<p class="meta">NightWarder | SKU-NW-REIMB-01 | Blank template</p>
+<p class="ver">Ver. 2026-09-06</p>
+{badge()}
+<hr class="rule"/>
+<h1>Expense reimbursement request</h1>
+<p class="sub">Blank request for EXAMPLE VFD — Station 99. Gold = input. Not a completed payment. Not a treasurer report. Not accounting advice. Fake 2099 chrome only.</p>
+<table>
+  <tr><td class="l">Department / company</td><td class="g">EXAMPLE VFD — Station 99</td><td class="l">Request date</td><td class="g"></td></tr>
+  <tr><td class="l">Member / requester (print)</td><td class="g"></td><td class="l">Rank / role</td><td class="g"></td></tr>
+  <tr><td class="l">Purpose of expense</td><td class="g"></td><td class="l">Incident / drill # (if any)</td><td class="g"></td></tr>
+  <tr><td class="l">Receipts attached? (Y / N + count)</td><td class="g"></td><td class="l">Payee / check payable to</td><td class="g"></td></tr>
+</table>
+<h1>Line items</h1>
+<p class="sub">Empty rows. Fill from real receipts. Do not invent amounts from this sample.</p>
+<table>
+  <tr><th style="width:8%">#</th><th>Date</th><th>Vendor / description</th><th style="width:18%">Amount</th><th style="width:16%">Account / line</th></tr>
+  <tr><td>1</td><td class="g" style="height:26px"></td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td>2</td><td class="g" style="height:26px"></td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td>3</td><td class="g" style="height:26px"></td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td>4</td><td class="g" style="height:26px"></td><td class="g"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td colspan="3" class="l">Total requested</td><td class="g"></td><td></td></tr>
+</table>
+<h1>Approvals</h1>
+<p class="sub">Gold blanks. A blank signature means this is still a template — not a completed reimbursement.</p>
+<table class="goldframe">
+  <tr><th style="width:26%">Role</th><th>Printed name</th><th>Signature</th><th style="width:16%">Date</th></tr>
+  <tr><td class="l">Requester</td><td class="g" style="height:28px"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="l">Officer / approver</td><td class="g" style="height:28px"></td><td class="g"></td><td class="g"></td></tr>
+  <tr><td class="l">Treasurer</td><td class="g" style="height:28px"></td><td class="g"></td><td class="g"></td></tr>
+</table>
+<div class="goldbox">NOT A COMPLETED PAYMENT. Unsigned gold rows mean nothing has been reimbursed on this form. Not a treasurer report. Not accounting advice. EXAMPLE · Station 99 only.</div>
+<p class="foot">SKU-NW-REIMB-01 | Blank template | Not a completed record | Not legal advice | EXAMPLE ONLY</p>
+""",
+)
+
+PAGES["simple-cash-petty-ledger"] = (
+    "sheet",
+    1600,
+    1000,
+    _sheet_banner()
+    + """
+<h1>EXAMPLE VFD — Station 99 — Simple cash / petty ledger (2099 toy figures)</h1>
+<p class="sub">FAKE ONLY. Do not copy into a working cash box. Not a treasurer report. Not accounting advice. Gold = typed. Green = toy running balance.</p>
+<div class="sec">Cash box header (toy)</div>
+<table>
+  <tr><td class="l">Box / fund name</td><td class="g">Station 99 petty (EXAMPLE)</td><td class="l">Custodian</td><td class="g">Treasurer Example</td></tr>
+  <tr><td class="l">Opening date</td><td class="g">2099-01-01</td><td class="l">Opening cash</td><td class="g money">$100.00</td></tr>
+</table>
+<div class="sec">Sample entries (fake 2099 — not a real book)</div>
+<table>
+  <tr><th>Date</th><th>Ref</th><th>Description</th><th>In</th><th>Out</th><th>Balance (toy)</th><th>Receipt?</th><th>Notes</th></tr>
+  <tr><td class="g">2099-03-02</td><td>P-01</td><td>Coffee / house supplies</td><td class="money">$0.00</td><td class="g money">$12.00</td><td class="f money">$88.00</td><td class="f">Y</td><td class="p">EXAMPLE</td></tr>
+  <tr class="alt"><td class="g">2099-03-08</td><td>P-02</td><td>Replenish from checking</td><td class="g money">$12.00</td><td class="money">$0.00</td><td class="f money">$100.00</td><td class="f">Y</td><td class="p">EXAMPLE</td></tr>
+  <tr><td class="g">2099-03-15</td><td>P-03</td><td>Training-night ice</td><td class="money">$0.00</td><td class="g money">$8.00</td><td class="f money">$92.00</td><td></td><td class="p">Left open so the buyer sees an unmatched slip</td></tr>
+  <tr><td colspan="3" class="l">Toy totals</td><td class="f money">$12.00</td><td class="f money">$20.00</td><td class="f money">$92.00</td><td colspan="2"></td></tr>
+</table>
+<p class="note">Figures are round 2099 toys. A blank live file starts empty. This screenshot is not a completed book.</p>
+<p class="foot">NightWarder — blank template. Not legal advice. Not a completed report. Not accounting advice. EXAMPLE ONLY — fake 2099 figures.</p>
+""",
+)
+
+PAGES["elevated-work-fall-protection-checklist"] = (
+    "doc",
+    1200,
+    1550,
+    f"""
+<p class="meta">NightWarder | SKU-NW-ELEV-01 | Blank checklist</p>
+<p class="ver">Ver. 2026-09-06</p>
+{badge()}
+<hr class="rule"/>
+<h1>Elevated work / fall protection checklist</h1>
+<p class="sub">Blank checklist for EXAMPLE VFD — Station 99. Not OSHA certification. Not a completed permit. Gold = input. Do not invent job conditions from this sample.</p>
+<table>
+  <tr><td class="l">Department / company</td><td class="g">EXAMPLE VFD — Station 99</td><td class="l">Date</td><td class="g"></td></tr>
+  <tr><td class="l">Job / location (buyer names)</td><td class="g"></td><td class="l">Work window</td><td class="g"></td></tr>
+  <tr><td class="l">Officer / IC</td><td class="g"></td><td class="l">Members aloft (count)</td><td class="g"></td></tr>
+</table>
+<h1>Pre-work checks (label only)</h1>
+<p class="sub">Buyer completes Y / N / NA from the real job. Empty boxes are the product.</p>
+<table>
+  <tr><th>Item (label only — buyer completes)</th><th style="width:14%">Y / N / NA</th><th style="width:28%">Notes / initials</th></tr>
+  <tr><td class="l">Work from ladder / roof / platform briefed</td><td></td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Harness / belt inspected by wearer</td><td></td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Anchor / tie-off point named</td><td></td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Spotter / ground person assigned</td><td></td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Weather / surface note (ice, wet, wind)</td><td></td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Other precaution (describe)</td><td></td><td class="g" style="height:26px"></td></tr>
+</table>
+<h1>Close-out</h1>
+<table>
+  <tr><td class="l">Work stopped / members down? (Y / N + time)</td><td class="g" style="height:28px"></td></tr>
+  <tr><td class="l">Gear stowed / defects noted</td><td class="g" style="height:28px"></td></tr>
+</table>
+<div class="goldbox">NOT OSHA CERTIFICATION. NOT A COMPLETED PERMIT. A filled row on this sample is still EXAMPLE · Station 99 fiction. Not AHJ approval. Not a written fall-protection program.</div>
+<p class="foot">SKU-NW-ELEV-01 | Blank checklist | Not a completed permit | Not OSHA certification | EXAMPLE ONLY</p>
+""",
+)
+
+PAGES["working-over-water-checklist"] = (
+    "doc",
+    1200,
+    1550,
+    f"""
+<p class="meta">NightWarder | SKU-NW-WATER-01 | Blank checklist</p>
+<p class="ver">Ver. 2026-09-06</p>
+{badge()}
+<hr class="rule"/>
+<h1>Working over water checklist</h1>
+<p class="sub">Blank checklist for EXAMPLE VFD — Station 99. Volunteer / small combination house voice. Not USCG certification. Not a completed rescue report. Gold = input. Do not invent a water rescue from this sample.</p>
+<table>
+  <tr><td class="l">Department / company</td><td class="g">EXAMPLE VFD — Station 99</td><td class="l">Date</td><td class="g"></td></tr>
+  <tr><td class="l">Location (pond / river / ice — buyer names)</td><td class="g"></td><td class="l">Work / drill window</td><td class="g"></td></tr>
+  <tr><td class="l">Officer / IC</td><td class="g"></td><td class="l">Members near water (count)</td><td class="g"></td></tr>
+</table>
+<h1>Pre-work checks (label only)</h1>
+<p class="sub">Buyer completes Y / N / NA from the real job or drill. Empty boxes are the product.</p>
+<table>
+  <tr><th>Item (label only — buyer completes)</th><th style="width:14%">Y / N / NA</th><th style="width:28%">Notes / initials</th></tr>
+  <tr><td class="l">PFD / flotation worn as local SOP requires</td><td></td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Throw bag / reaching aid staged</td><td></td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Shore safety / spotter assigned</td><td></td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Ice / current / weather note</td><td></td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Boat / ice platform used? (note type)</td><td></td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Other precaution (describe)</td><td></td><td class="g" style="height:26px"></td></tr>
+</table>
+<h1>Close-out</h1>
+<table>
+  <tr><td class="l">Members off the water? (Y / N + time)</td><td class="g" style="height:28px"></td></tr>
+  <tr><td class="l">Gear stowed / defects noted</td><td class="g" style="height:28px"></td></tr>
+</table>
+<div class="goldbox">NOT USCG CERTIFICATION. NOT A COMPLETED RESCUE REPORT. This is a blank house checklist — not a boat license, not a dive cert, and not an incident narrative. EXAMPLE · Station 99 only.</div>
+<p class="foot">SKU-NW-WATER-01 | Blank checklist | Not a completed rescue report | Not USCG certification | EXAMPLE ONLY</p>
+""",
+)
+
+PAGES["respiratory-protection-checklist"] = (
+    "doc",
+    1200,
+    1550,
+    f"""
+<p class="meta">NightWarder | SKU-NW-RESP-01 | Checklist only</p>
+<p class="ver">Ver. 2026-09-06</p>
+{badge()}
+<hr class="rule"/>
+<h1>Respiratory protection checklist</h1>
+<p class="sub">CHECKLIST ONLY for EXAMPLE VFD — Station 99. Not a full respiratory program. Not a medical evaluation. Not a fit-test certificate. Not OSHA 1910.134 compliance. Gold = input. Do not invent a program from this sample.</p>
+<div class="warn"><strong>CHECKLIST ONLY.</strong> This file does not create a written respiratory-protection program. It is not a medical evaluation. It is not a fit-test certificate. It is not OSHA 1910.134 compliance.</div>
+<table>
+  <tr><td class="l">Department / company</td><td class="g">EXAMPLE VFD — Station 99</td><td class="l">Date</td><td class="g"></td></tr>
+  <tr><td class="l">Member / wearer (print)</td><td class="g"></td><td class="l">Unit / assignment</td><td class="g"></td></tr>
+  <tr><td class="l">Facepiece / respirator ID (buyer lists)</td><td class="g"></td><td class="l">Officer / check partner</td><td class="g"></td></tr>
+</table>
+<h1>Pre-use checks (label only)</h1>
+<p class="sub">Buyer completes Y / N / NA from the real set. Empty boxes are the product. This is not a fit test and not a medical clearance.</p>
+<table>
+  <tr><th>Item (label only — buyer completes)</th><th style="width:14%">Y / N / NA</th><th style="width:28%">Notes / initials</th></tr>
+  <tr><td class="l">Facepiece inspected (straps, lens, seal surface)</td><td></td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Cartridge / filter / cylinder note (if used)</td><td></td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">User seal check performed (local SOP)</td><td></td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Defects / out-of-service note</td><td></td><td class="g" style="height:26px"></td></tr>
+  <tr><td class="l">Other check (buyer describes)</td><td></td><td class="g" style="height:26px"></td></tr>
+</table>
+<h1>Close-out</h1>
+<table>
+  <tr><td class="l">Set cleaned / bagged per local SOP? (Y / N)</td><td class="g" style="height:28px"></td></tr>
+  <tr><td class="l">Defects reported to (name)</td><td class="g" style="height:28px"></td></tr>
+</table>
+<div class="goldbox">CHECKLIST ONLY. NOT A FULL RESPIRATORY PROGRAM. NOT A MEDICAL EVALUATION. NOT A FIT-TEST CERTIFICATE. NOT OSHA 1910.134 COMPLIANCE. EXAMPLE · Station 99 only.</div>
+<p class="foot">SKU-NW-RESP-01 | Checklist only | Not a program | Not a medical eval | Not a fit-test cert | Not OSHA 1910.134 | EXAMPLE ONLY</p>
+""",
+)
+
+PAGES["em-drill-exercise-assessment"] = (
+    "doc",
+    1200,
+    1550,
+    f"""
+<p class="meta">NightWarder | SKU-NW-DRILL-01 | Blank template</p>
+<p class="ver">Ver. 2026-09-06</p>
+{badge()}
+<hr class="rule"/>
+<h1>EM drill / exercise assessment</h1>
+<p class="sub">Blank house drill notes for EXAMPLE VFD — Station 99. Not HSEEP certification. Not a completed graded exercise filing. Gold = input. Do not invent a graded after-action from this sample.</p>
+<table>
+  <tr><td class="l">Department / company</td><td class="g">EXAMPLE VFD — Station 99</td><td class="l">Date</td><td class="g"></td></tr>
+  <tr><td class="l">Drill / exercise name</td><td class="g"></td><td class="l">Location</td><td class="g"></td></tr>
+  <tr><td class="l">Lead instructor / IC</td><td class="g"></td><td class="l">Duration</td><td class="g"></td></tr>
+  <tr><td class="l">Members present (count)</td><td class="g"></td><td class="l">Mutual aid / guests</td><td class="g"></td></tr>
+</table>
+<p class="sub">Type — check all that apply</p>
+<div class="checks" style="grid-template-columns:repeat(3,1fr)">
+  <span><i class="box"></i> Station / night drill</span>
+  <span><i class="box"></i> Tabletop</span>
+  <span><i class="box"></i> Functional / field</span>
+  <span><i class="box"></i> Medical / EMS</span>
+  <span><i class="box"></i> Fire / suppression</span>
+  <span><i class="box"></i> Other (note below)</span>
+</div>
+<h1>Objectives and notes</h1>
+<p class="sub">Empty gold. Write what the house practiced — not a federal exercise filing.</p>
+<table>
+  <tr><td class="l">Stated objectives (buyer lists)</td><td class="g" style="height:36px"></td></tr>
+  <tr><td class="l">What went well</td><td class="g" style="height:36px"></td></tr>
+  <tr><td class="l">What to fix next drill</td><td class="g" style="height:36px"></td></tr>
+  <tr><td class="l">Injuries / near-miss / stop note</td><td class="g" style="height:28px"></td></tr>
+</table>
+<div class="goldbox">NOT HSEEP CERTIFICATION. NOT A COMPLETED GRADED EXERCISE FILING. House drill notes only — not a federal AAR and not a capability claim. EXAMPLE · Station 99 only.</div>
+<p class="foot">SKU-NW-DRILL-01 | Blank template | Not HSEEP certification | Not a graded exercise filing | EXAMPLE ONLY</p>
+""",
+)
+
 
 def chrome_shot(html_path: Path, png_path: Path, w: int, h: int) -> None:
     png_path.parent.mkdir(parents=True, exist_ok=True)
@@ -734,7 +995,14 @@ def main() -> int:
     SHOT.mkdir(parents=True, exist_ok=True)
     OUT.mkdir(parents=True, exist_ok=True)
 
+    wanted = set(sys.argv[1:]) if len(sys.argv) > 1 else set(PAGES)
+    unknown = wanted - set(PAGES)
+    if unknown:
+        raise SystemExit(f"unknown sample page(s): {', '.join(sorted(unknown))}")
+
     for name, (kind, w, h, body) in PAGES.items():
+        if name not in wanted:
+            continue
         html_path = WORK / f"{name}.html"
         html_path.write_text(page(kind, body), encoding="utf-8")
         raw = SHOT / f"{name}-raw.png"
@@ -742,10 +1010,11 @@ def main() -> int:
         chrome_shot(html_path, raw, w, h)
         crop_top(raw, OUT / f"{name}.png", 16, 10)
 
-    collage(
-        [OUT / "treasurer-report.png", OUT / "incident-aar.png", OUT / "heat-illness-sop.png"],
-        OUT / "core-bundle.png",
-    )
+    if not wanted.isdisjoint({"treasurer-report", "incident-aar", "heat-illness-sop"}) or "core-bundle" in wanted:
+        collage(
+            [OUT / "treasurer-report.png", OUT / "incident-aar.png", OUT / "heat-illness-sop.png"],
+            OUT / "core-bundle.png",
+        )
     print("wrote", OUT)
     return 0
 
