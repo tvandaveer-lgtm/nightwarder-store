@@ -6,7 +6,7 @@
 
 **Repo:** GitHub Pages on `nightwarder-store` (`index.html` + `assets/`). CNAME remains `nightwarder.com`.
 
-**Storefront aisles:** Gear (`#gear`) · Permits (`#permits`) · Ops (`#ops`) · Admin (`#admin`). Nav / footer: Gear · Permits · Ops · Admin · Support. No “Word kits” aisle. No Core category pack.
+**Storefront aisles:** Gear (`#gear`) · Permits (`#permits`) · Ops (`#ops`) · Admin (`#admin`). Nav / footer: Gear · Permits · Ops · Admin · Support · X (`https://x.com/NightWarder`). No “Word kits” aisle. No Core category pack.
 
 **Category map (cards only — not Stripe packs):**
 
