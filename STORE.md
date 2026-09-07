@@ -29,6 +29,8 @@ BUNDLE-01 (TR+AAR+HEAT, $49) is a leftover mix listed last under Admin. It is no
 
 **Thumbnails:** EXAMPLE / Station 99 demo screenshots of the live kits (fake 2099 figures). Not abstract kit-cover art. Catalog cards use the PNG samples; click opens a lightbox.
 
+**Compact catalog cards (Option A):** 4:3 thumbs, title (2-line clamp), price + Buy. Card `.desc` is hidden in `#catalog` grids so aisles stay dense and rows do not stretch to the tallest disclaimer. Legal / “what it is not” stays in the page note, not on cards. BUNDLE-01 (`#bundle`) is a full-row leftover mix with includes chips; do not put new legal copy on it. Guide-index cards keep `.desc` (clamped). Do not change Stripe / Buy hrefs for a layout pass.
+
 ## Asset map (SKU → screenshot)
 
 | SKU | Screenshot |

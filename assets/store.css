@@ -339,13 +339,13 @@ a { color: inherit; }
 
 .thumb img {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   object-position: top center;
 }
 
 .thumb-blank {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 4 / 3;
 }
 
 .thumb-label {
@@ -366,50 +366,60 @@ a { color: inherit; }
 .card-body {
   display: flex;
   flex-direction: column;
-  gap: 0.45rem;
-  padding: 1rem 1.05rem 1.1rem;
+  gap: 0.35rem;
+  padding: 0.75rem 0.85rem 0.8rem;
   flex: 1;
 }
 
 .name {
   font-weight: 650;
-  font-size: 1.08rem;
+  font-size: 1rem;
+  line-height: 1.3;
   letter-spacing: -0.015em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
 }
 
 .desc {
   color: var(--muted);
   font-size: 0.92rem;
-  flex: 1;
   margin: 0;
+}
+
+/* Catalog cards: image → title → price+Buy. Legal stays in the page note. */
+#catalog .grid > .card .desc {
+  display: none;
 }
 
 .row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.75rem;
-  margin-top: 0.5rem;
+  gap: 0.65rem;
+  margin-top: auto;
 }
 
 .price {
   font-weight: 700;
   font-variant-numeric: tabular-nums;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
 }
 
 a.buy {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 5.2rem;
-  min-height: 2.35rem;
+  min-width: 4.6rem;
+  min-height: 2rem;
   background: var(--accent);
   color: var(--accent-ink);
   text-decoration: none;
   font-weight: 650;
-  font-size: 0.92rem;
-  padding: 0.45rem 0.95rem;
+  font-size: 0.88rem;
+  padding: 0.28rem 0.8rem;
   border-radius: 8px;
 }
 
@@ -426,7 +436,8 @@ a.buy:focus-visible,
   outline-offset: 2px;
 }
 
-.card.featured {
+.card.featured,
+#catalog #bundle {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 1fr;
@@ -436,13 +447,15 @@ a.buy:focus-visible,
   border-color: #6a3a22;
 }
 
-.card.featured .thumb {
+.card.featured .thumb,
+#catalog #bundle .thumb {
   border-bottom: 1px solid var(--line);
 }
 
-.card.featured .card-body {
-  padding: 1.25rem 1.2rem 1.35rem;
-  gap: 0.65rem;
+.card.featured .card-body,
+#catalog #bundle .card-body {
+  padding: 0.9rem 1rem 1rem;
+  gap: 0.5rem;
 }
 
 .badge {
@@ -459,14 +472,16 @@ a.buy:focus-visible,
   padding: 0.22rem 0.55rem;
 }
 
-.card.featured .name {
+.card.featured .name,
+#catalog #bundle .name {
   font-family: var(--serif);
-  font-size: 1.7rem;
+  font-size: 1.25rem;
   font-weight: 650;
 }
 
-.card.featured .desc {
-  font-size: 1rem;
+.card.featured .desc,
+#catalog #bundle .desc {
+  font-size: 0.95rem;
   max-width: 38rem;
 }
 
@@ -743,7 +758,15 @@ a.buy:focus-visible,
 }
 
 .guide-index .card-body {
-  gap: 0.55rem;
+  gap: 0.4rem;
+}
+
+.guide-index .desc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
 }
 
 .guide-index .card {
@@ -783,17 +806,32 @@ a.card.guide-card:hover .name,
   .hero-grid { grid-template-columns: 1.4fr 0.8fr; }
   .guide-hero .hero-grid { grid-template-columns: 1fr; }
   .grid { grid-template-columns: 1fr 1fr; }
-  .card.featured {
-    grid-template-columns: 1fr;
+  .card.featured,
+  #catalog #bundle {
+    grid-column: 1 / -1;
+    grid-template-columns: minmax(14rem, 20rem) 1fr;
   }
-  .card.featured .thumb { border-bottom: 1px solid var(--line); border-right: 0; }
-  .card.featured .thumb img { aspect-ratio: 16 / 9; height: auto; }
+  .card.featured .thumb,
+  #catalog #bundle .thumb {
+    border-bottom: 0;
+    border-right: 1px solid var(--line);
+  }
+  .card.featured .thumb img,
+  #catalog #bundle .thumb img {
+    aspect-ratio: 4 / 3;
+    height: 100%;
+    object-fit: cover;
+  }
   .footer-grid { grid-template-columns: 1.4fr 1fr 1fr; }
 }
 
 @media (min-width: 980px) {
   .grid { grid-template-columns: 1fr 1fr 1fr; }
   .hero { padding: 4.25rem 0 2.75rem; }
+}
+
+@media (min-width: 1200px) {
+  .grid { grid-template-columns: 1fr 1fr 1fr 1fr; }
 }
 
 @media (max-width: 640px) {
